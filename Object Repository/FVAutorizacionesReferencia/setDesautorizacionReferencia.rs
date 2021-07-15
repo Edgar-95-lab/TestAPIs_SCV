@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getConsultaReferenciaAut</name>
+   <name>setDesautorizacionReferencia</name>
    <tag></tag>
-   <elementGuidId>6fdcc2b0-ffaa-4325-9f86-6cb3b9b28769</elementGuidId>
+   <elementGuidId>9fca7b2a-b6a3-4410-803e-139eeff70eb4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;vchReferencia\&quot;: \&quot;11125120071631703225\&quot;,\n    \&quot;iNoOperacionModificacion\&quot;: -1\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;vchReferencia\&quot;: \&quot;11125120071631703225\&quot;,\n  \&quot;vchObservaciones\&quot;: \&quot;Desautorizacion 1\&quot;,\n  \&quot;iNoOperacionModificacion\&quot;: 21012130\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -51,17 +51,17 @@
       <value>12</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/getConsultaReferenciaAut</restUrl>
+   <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/setDesautorizacionReferencia</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -75,7 +75,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.verifyElementPropertyValue(response, '', '')</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

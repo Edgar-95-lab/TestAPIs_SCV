@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_FVAutorizacionesReferencia,,,,2021-07-15 15:44:29,2021-07-15 15:44:33,4.974s,FAILED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut,,,,2021-07-15 15:44:29,2021-07-15 15:44:33,4.757s,FAILED
+operation = 21021011,,,,2021-07-15 15:44:29,2021-07-15 15:44:29,0.000s,PASSED
+valor = 0,,,,2021-07-15 15:44:29,2021-07-15 15:44:29,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferenciaAut""))",,,,2021-07-15 15:44:29,2021-07-15 15:44:30,0.895s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-15 15:44:30,2021-07-15 15:44:30,0.013s,PASSED
+"verifyElementPropertyValue(response, ""bResultado"", true)",,,,2021-07-15 15:44:30,2021-07-15 15:44:30,0.049s,PASSED
+"verifyElementPropertyValue(response, ""dFechaEmision"", ""2021-07-09T00:00:00"")",,,,2021-07-15 15:44:30,2021-07-15 15:44:30,0.029s,PASSED
+"verifyElementPropertyValue(response, ""dFechaVigencia"", ""2021-07-09T00:00:00"")",,,,2021-07-15 15:44:30,2021-07-15 15:44:30,0.018s,PASSED
+"verifyElementPropertyValue(response, ""iError"", 0)",,,,2021-07-15 15:44:30,2021-07-15 15:44:30,0.019s,PASSED
+"for ([i = operation, i <= getElementPropertyValue(response, ""iNoOperacionModificacion""), (i++)])",,,,2021-07-15 15:44:30,2021-07-15 15:44:33,3.365s,PASSED
+"verifyElementPropertyValue(response, ""iNoOperacionModificacion"", valor)",,,,2021-07-15 15:44:33,2021-07-15 15:44:33,0.015s,PASSED
+"verifyElementPropertyValue(response, ""mTotalReferencia"", 1659.0000)",,,,2021-07-15 15:44:33,2021-07-15 15:44:33,0.017s,PASSED
+"verifyElementPropertyValue(response, ""tiBandera"", 3)",,,,2021-07-15 15:44:33,2021-07-15 15:44:33,0.027s,FAILED

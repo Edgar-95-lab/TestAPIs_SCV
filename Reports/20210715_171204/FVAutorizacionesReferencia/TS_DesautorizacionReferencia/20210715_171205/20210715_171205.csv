@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_DesautorizacionReferencia,,,,2021-07-15 17:12:11,2021-07-15 17:12:16,5.229s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/setDesautorizacionReferencia,,,,2021-07-15 17:12:11,2021-07-15 17:12:13,1.618s,PASSED
+operation = 21012130,,,,2021-07-15 17:12:12,2021-07-15 17:12:12,0.001s,PASSED
+valor = 0,,,,2021-07-15 17:12:12,2021-07-15 17:12:12,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/setDesautorizacionReferencia""))",,,,2021-07-15 17:12:12,2021-07-15 17:12:12,0.929s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-15 17:12:12,2021-07-15 17:12:12,0.013s,PASSED
+"if (getElementPropertyValue(response, ""bResultado"") == true)",,,,2021-07-15 17:12:12,2021-07-15 17:12:13,0.334s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut,,,,2021-07-15 17:12:13,2021-07-15 17:12:15,2.119s,PASSED
+operation = 21021254,,,,2021-07-15 17:12:13,2021-07-15 17:12:13,0.001s,PASSED
+valor = 0,,,,2021-07-15 17:12:13,2021-07-15 17:12:13,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferenciaAut""))",,,,2021-07-15 17:12:13,2021-07-15 17:12:13,0.173s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-15 17:12:13,2021-07-15 17:12:13,0.002s,PASSED
+"if (getElementPropertyValue(response, ""tiBandera"") == 2)",,,,2021-07-15 17:12:13,2021-07-15 17:12:13,0.015s,PASSED
+else,,,,2021-07-15 17:12:13,2021-07-15 17:12:15,1.688s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferencia,,,,2021-07-15 17:12:15,2021-07-15 17:12:16,1.279s,PASSED
+operation = 21021208,,,,2021-07-15 17:12:15,2021-07-15 17:12:15,0.000s,PASSED
+valor = 0,,,,2021-07-15 17:12:15,2021-07-15 17:12:15,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferencia""))",,,,2021-07-15 17:12:15,2021-07-15 17:12:15,0.171s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-15 17:12:15,2021-07-15 17:12:15,0.002s,PASSED
+"if (getElementPropertyValue(response, ""[0].bResultado"") == true)",,,,2021-07-15 17:12:15,2021-07-15 17:12:15,0.017s,PASSED
+else,,,,2021-07-15 17:12:15,2021-07-15 17:12:16,0.842s,PASSED

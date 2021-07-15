@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getConsultaReferenciaAut</name>
+   <name>getConsultaReferencia</name>
    <tag></tag>
-   <elementGuidId>6fdcc2b0-ffaa-4325-9f86-6cb3b9b28769</elementGuidId>
+   <elementGuidId>ff13add9-f891-456b-9a2d-3a4d329f5e54</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;vchReferencia\&quot;: \&quot;11125120071631703225\&quot;,\n    \&quot;iNoOperacionModificacion\&quot;: -1\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;vchReferencia\&quot;: \&quot;11125120071631703225\&quot;,\n    \&quot;iNoOperacion\&quot;: -1,\n    \&quot;iNoOperacionModificacion\&quot;: -1\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -51,17 +51,17 @@
       <value>12</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/getConsultaReferenciaAut</restUrl>
+   <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/getConsultaReferencia</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -75,7 +75,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.verifyElementPropertyValue(response, '', '')</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

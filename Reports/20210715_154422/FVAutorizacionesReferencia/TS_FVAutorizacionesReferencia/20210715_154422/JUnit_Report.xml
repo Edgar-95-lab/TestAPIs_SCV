@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_FVAutorizacionesReferencia" time="5.442" tests="1" failures="1" errors="0">
+   <testsuite name="TS_FVAutorizacionesReferencia" tests="1" failures="1" errors="0" time="5.442" skipped="0" timestamp="2021-07-15 15:44:29" hostname="Edgar García - DESKTOP-GI6RVR8" id="Test Suites/FVAutorizacionesReferencia/TS_FVAutorizacionesReferencia">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Edgar Garc\u00EDa\\git\\TestAPIs_SCV\\TestAPIs_SCV\\Reports\\20210715_154422\\FVAutorizacionesReferencia\\TS_FVAutorizacionesReferencia\\20210715_154422"/>
+         <property name="logFiles" value="C:\\Users\\Edgar Garc\u00EDa\\git\\TestAPIs_SCV\\TestAPIs_SCV\\Reports\\20210715_154422\\FVAutorizacionesReferencia\\TS_FVAutorizacionesReferencia\\20210715_154422\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Edgar García - DESKTOP-GI6RVR8"/>
+         <property name="hostAddress" value="192.168.100.38"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.0.5.208"/>
+      </properties>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" time="4.757" classname="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" status="FAILED">
+         <failure type="FAILED" message="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '3' is not equal with actual property value '2'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at getConsultaReferenciaAut.run(getConsultaReferenciaAut:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1626381862155.run(TempTestSuite1626381862155.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-15 15:44:29 - [TEST_CASE][FAILED] - Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut: Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '3' is not equal with actual property value '2'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at getConsultaReferenciaAut.run(getConsultaReferenciaAut:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1626381862155.run(TempTestSuite1626381862155.groovy:39)
+
+
+2021-07-15 15:44:29 - [TEST_STEP][PASSED] - operation = 21021011: null
+
+2021-07-15 15:44:29 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-15 15:44:29 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/getConsultaReferenciaAut")): Send request successfully
+
+2021-07-15 15:44:30 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\git\TestAPIs_SCV\TestAPIs_SCV\Reports\20210715_154422\FVAutorizacionesReferencia\TS_FVAutorizacionesReferencia\20210715_154422\requests\main\0.har
+
+2021-07-15 15:44:30 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-07-15 15:44:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "bResultado", true): Verify element property value successfully
+
+2021-07-15 15:44:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "dFechaEmision", "2021-07-09T00:00:00"): Verify element property value successfully
+
+2021-07-15 15:44:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "dFechaVigencia", "2021-07-09T00:00:00"): Verify element property value successfully
+
+2021-07-15 15:44:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "iError", 0): Verify element property value successfully
+
+2021-07-15 15:44:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - for ([i = operation, i <= getElementPropertyValue(response, "iNoOperacionModificacion"), (i++)]): null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:30 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:31 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:32 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "iNoOperacionModificacion", valor): Verify element property value successfully
+
+2021-07-15 15:44:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 15:44:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "mTotalReferencia", 1659.0000): Verify element property value successfully
+
+2021-07-15 15:44:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 15:44:33 - [TEST_STEP][FAILED] - verifyElementPropertyValue(response, "tiBandera", 3): Unable to verify element property value (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected element property value '3' is not equal with actual property value '2'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at getConsultaReferenciaAut.run(getConsultaReferenciaAut:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1626381862155.run(TempTestSuite1626381862155.groovy:39)
+)
+
+2021-07-15 15:44:33 - [MESSAGE][FAILED] - Expected element property value '3' is not equal with actual property value '2'
+
+2021-07-15 15:44:33 - [MESSAGE][FAILED] - Unable to verify element property value (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected element property value '3' is not equal with actual property value '2'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at getConsultaReferenciaAut.run(getConsultaReferenciaAut:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1626381862155.run(TempTestSuite1626381862155.groovy:39)
+)]]></system-out>
+         <system-err><![CDATA[2021-07-15 15:44:29 - [TEST_CASE][FAILED] - Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut: Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '3' is not equal with actual property value '2'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at getConsultaReferenciaAut.run(getConsultaReferenciaAut:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1626381862155.run(TempTestSuite1626381862155.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-07-15 15:44:29 - [TEST_SUITE][FAILED] - TS_FVAutorizacionesReferencia: Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '3' is not equal with actual property value '2'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at getConsultaReferenciaAut.run(getConsultaReferenciaAut:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1626381862155.run(TempTestSuite1626381862155.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-07-15 15:44:29 - [TEST_SUITE][FAILED] - TS_FVAutorizacionesReferencia: Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value '3' is not equal with actual property value '2'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at getConsultaReferenciaAut.run(getConsultaReferenciaAut:44)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1626381862155.run(TempTestSuite1626381862155.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

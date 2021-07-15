@@ -1,0 +1,91 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_FVAutorizacionesReferencia,,,,2021-07-15 15:53:22,2021-07-15 15:53:26,3.953s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut,,,,2021-07-15 15:53:22,2021-07-15 15:53:24,1.660s,PASSED
+operation = 21021254,,,,2021-07-15 15:53:22,2021-07-15 15:53:22,0.000s,PASSED
+valor = 0,,,,2021-07-15 15:53:22,2021-07-15 15:53:22,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferenciaAut""))",,,,2021-07-15 15:53:22,2021-07-15 15:53:23,0.898s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-15 15:53:23,2021-07-15 15:53:23,0.012s,PASSED
+"verifyElementPropertyValue(response, ""bResultado"", true)",,,,2021-07-15 15:53:23,2021-07-15 15:53:23,0.046s,PASSED
+"verifyElementPropertyValue(response, ""dFechaEmision"", ""2021-07-09T00:00:00"")",,,,2021-07-15 15:53:23,2021-07-15 15:53:23,0.017s,PASSED
+"verifyElementPropertyValue(response, ""dFechaVigencia"", ""2021-07-09T00:00:00"")",,,,2021-07-15 15:53:23,2021-07-15 15:53:23,0.018s,PASSED
+"verifyElementPropertyValue(response, ""iError"", 0)",,,,2021-07-15 15:53:23,2021-07-15 15:53:23,0.018s,PASSED
+"for ([i = operation, i <= getElementPropertyValue(response, ""iNoOperacionModificacion""), (i++)])",,,,2021-07-15 15:53:23,2021-07-15 15:53:23,0.136s,PASSED
+"verifyElementPropertyValue(response, ""iNoOperacionModificacion"", valor)",,,,2021-07-15 15:53:23,2021-07-15 15:53:23,0.019s,PASSED
+"verifyElementPropertyValue(response, ""mTotalReferencia"", 1659.0000)",,,,2021-07-15 15:53:23,2021-07-15 15:53:24,0.028s,PASSED
+"verifyElementPropertyValue(response, ""tiBandera"", 2)",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.015s,PASSED
+"verifyElementPropertyValue(response, ""tiEstatusAutorizacion"", 1)",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.015s,PASSED
+"verifyElementPropertyValue(response, ""tiEstatusReferencia"", 1)",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchDescEstatusRef"", ""EMITIDO"")",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchDescEtatusAut"", ""AUTORIZADA"")",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchMensaje"", ""Los datos se consultaron exitosamente"")",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchMensajeLog"", """")",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchNombre"", ""SANTOS CAZARIN CRUZ DAVID ESTUARDO"")",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.016s,PASSED
+"verifyElementPropertyValue(response, ""vchReferencia"", ""11125120071631703225"")",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.018s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferencia,,,,2021-07-15 15:53:24,2021-07-15 15:53:26,2.067s,PASSED
+operation = 21021208,,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.000s,PASSED
+valor = 0,,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.001s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferencia""))",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.177s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.001s,PASSED
+"verifyElementPropertyValue(response, ""[0].bResultado"", true)",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.017s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchMensaje"", ""Consulta de referencia correcta"")",,,,2021-07-15 15:53:24,2021-07-15 15:53:24,0.016s,PASSED
+"for ([i = operation, i <= getElementPropertyValue(response, ""[0].iNoOperacionModificacion""), (i++)])",,,,2021-07-15 15:53:24,2021-07-15 15:53:25,0.790s,PASSED
+"verifyElementPropertyValue(response, ""[0].iNoOperacionModificacion"", valor)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].iError"", 0)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchReferencia"", 11125120071631703225)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiOficina"", 0)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchOficina"", ""PUEBLA I FINANZAS"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].smTipoMovimiento"", 1)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.016s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchMovimiento"", ""ALTA VEHICULO"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].iNoOperacion"", 21019796)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].iControl"", 200002523)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchPlaca"", ""13DGS2"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.012s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchNombre"", ""SANTOS CAZARIN CRUZ DAVID ESTUARDO"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.016s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchRFC"", ""SACC790503PC6"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].iModelo"", 2020)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiClaseTipo"", 71)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchSerie"", ""F25BKFA4903"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiCilindros"", 0)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchNoMotor"", ""MOTORNO"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.017s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiCombustible"", 77)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.019s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiTipoServicio"", 86)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchProcedencia"", ""NACIONAL"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].dFechaExpedicion"", ""2021-07-15T00:00:00"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.016s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchVigencia"", ""PERMANENTE"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiTramite"", 2)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchCalcomania"", """")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchUsoVehiculo"", ""01"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].iNumeroForma"", 12)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchDescripcionForma"", ""TARJETA DE CIRCULACION"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].iFolio"", -1)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].iIdEstatus"", 1)",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchEstatus"", ""REGISTRADO"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.012s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchNombreTramite"", ""SANTOS CAZARIN CRUZ DAVID ESTUARDO"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.012s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchIdentificacion"", ""I.F.E.                                  "")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.012s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchFolioIdentificacion"", ""NA"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchCalcomaniaAlfanumerica"", """")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.012s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchToneladas"", ""2500"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchCalle"", ""221"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchNoExterior"", ""22211"")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchNoInterior"", """")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.012s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchLetra"", """")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchColonia"", ""LAS CANOAS                                                                                          "")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchLocalidad"", ""APATAUYAN                                                                                           "")",,,,2021-07-15 15:53:25,2021-07-15 15:53:25,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchMunicipio"", ""ATEMPAN                                                                                             "")",,,,2021-07-15 15:53:25,2021-07-15 15:53:26,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchComplemento"", ""PLACA= 13DGS2 #NIV= F25BKFA4903"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchDescCombustible"", ""GASOLINA  "")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiFirma"", 1)",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.012s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchPuestoFirma"", ""SECRETARIA DE PLANEACION Y FINANZAS"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchNombreFirma"", ""ACT.  MARIA TERESA CASTRO CORRO"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.013s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchPuestoFirma2"", ""SECRETARIO DE MOVILIDAD Y TRANSPORTE"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchNombreFirma2"", ""MTRO. GUILLERMO ARECHIGA SANTAMARIA"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchClaveVehicular"", ""2020517"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchEmpresa"", """")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchCURP"", ""SACC790503HVZNZR00"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiBan_cve_veh"", 2)",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchDesc_uso"", ""PARTICULAR                                        "")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].tiAsignacion"", 1)",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchMarca2"", ""FORD           "")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchLinea2"", ""F - 700                  "")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.014s,PASSED
+"verifyElementPropertyValue(response, ""[0].vchTipo2"", ""153 LPG 28000 L"")",,,,2021-07-15 15:53:26,2021-07-15 15:53:26,0.013s,PASSED

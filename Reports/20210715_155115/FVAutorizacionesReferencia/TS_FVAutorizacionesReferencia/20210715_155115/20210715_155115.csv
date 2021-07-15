@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_FVAutorizacionesReferencia,,,,2021-07-15 15:51:21,2021-07-15 15:51:23,1.846s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut,,,,2021-07-15 15:51:21,2021-07-15 15:51:23,1.639s,PASSED
+operation = 21021254,,,,2021-07-15 15:51:22,2021-07-15 15:51:22,0.001s,PASSED
+valor = 0,,,,2021-07-15 15:51:22,2021-07-15 15:51:22,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferenciaAut""))",,,,2021-07-15 15:51:22,2021-07-15 15:51:23,0.892s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.014s,PASSED
+"verifyElementPropertyValue(response, ""bResultado"", true)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.062s,PASSED
+"verifyElementPropertyValue(response, ""dFechaEmision"", ""2021-07-09T00:00:00"")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.017s,PASSED
+"verifyElementPropertyValue(response, ""dFechaVigencia"", ""2021-07-09T00:00:00"")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.019s,PASSED
+"verifyElementPropertyValue(response, ""iError"", 0)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.021s,PASSED
+"for ([i = operation, i <= getElementPropertyValue(response, ""iNoOperacionModificacion""), (i++)])",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.107s,PASSED
+"verifyElementPropertyValue(response, ""iNoOperacionModificacion"", valor)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.016s,PASSED
+"verifyElementPropertyValue(response, ""mTotalReferencia"", 1659.0000)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.016s,PASSED
+"verifyElementPropertyValue(response, ""tiBandera"", 2)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.017s,PASSED
+"verifyElementPropertyValue(response, ""tiEstatusAutorizacion"", 1)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.014s,PASSED
+"verifyElementPropertyValue(response, ""tiEstatusReferencia"", 1)",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchDescEstatusRef"", ""EMITIDO"")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.016s,PASSED
+"verifyElementPropertyValue(response, ""vchDescEtatusAut"", ""AUTORIZADA"")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchMensaje"", ""Los datos se consultaron exitosamente"")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchMensajeLog"", """")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.014s,PASSED
+"verifyElementPropertyValue(response, ""vchNombre"", ""SANTOS CAZARIN CRUZ DAVID ESTUARDO"")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.015s,PASSED
+"verifyElementPropertyValue(response, ""vchReferencia"", ""11125120071631703225"")",,,,2021-07-15 15:51:23,2021-07-15 15:51:23,0.015s,PASSED

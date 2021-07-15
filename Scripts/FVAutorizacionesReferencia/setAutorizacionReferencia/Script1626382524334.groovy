@@ -17,57 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int operation = 21021254
+int operation = 21021291
 
 int valor = 0
 
-response = WS.sendRequest(findTestObject('FVAutorizacionesReferencia/getConsultaReferenciaAut'))
+response = WS.sendRequest(findTestObject('FVAutorizacionesReferencia/setAutorizacionReferencia'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-if(WS.getElementPropertyValue(response, 'tiBandera') == 2)
+if(WS.getElementPropertyValue(response, 'bResultado') == true)
 {
-	
-	
-	WS.verifyElementPropertyValue(response, 'bResultado', true)
-	
-	WS.verifyElementPropertyValue(response, 'dFechaEmision', '2021-07-09T00:00:00')
-	
-	WS.verifyElementPropertyValue(response, 'dFechaVigencia', '2021-07-09T00:00:00')
-	
-	WS.verifyElementPropertyValue(response, 'iError', 0)
-	
-	for (int i = operation; i <= WS.getElementPropertyValue(response, 'iNoOperacionModificacion'); i++) 
-		{
-		valor = i
-		
-		}
-	
-	WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', valor)
-	
-	WS.verifyElementPropertyValue(response, 'mTotalReferencia', 1659.0000)
-	
-	
-	WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 1)
-	
-	WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', 1)
-	
-	WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', 'EMITIDO')
-	
-	WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', 'AUTORIZADA')
-	
-	WS.verifyElementPropertyValue(response, 'vchMensaje', 'Los datos se consultaron exitosamente')
-	
-	WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
-	
-	WS.verifyElementPropertyValue(response, 'vchNombre', 'SANTOS CAZARIN CRUZ DAVID ESTUARDO')
-	
-	WS.verifyElementPropertyValue(response, 'vchReferencia', '11125120071631703225')
-	
-}else {
-	
-	WS.verifyElementPropertyValue(response, 'bResultado', true)
-	
 	WS.verifyElementPropertyValue(response, 'dFechaEmision', '2021-07-09T00:00:00')
 	
 	WS.verifyElementPropertyValue(response, 'dFechaVigencia', '2021-07-09T00:00:00')
@@ -77,30 +36,65 @@ if(WS.getElementPropertyValue(response, 'tiBandera') == 2)
 	for (int i = operation; i <= WS.getElementPropertyValue(response, 'iNoOperacionModificacion'); i++)
 		{
 		valor = i
-		
 		}
-	
+		
 	WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', valor)
 	
 	WS.verifyElementPropertyValue(response, 'mTotalReferencia', 1659.0000)
 	
+	WS.verifyElementPropertyValue(response, 'tiBandera', 3)
 	
-	WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 0)
+	WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 1)
 	
 	WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', 1)
 	
 	WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', 'EMITIDO')
 	
-	WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', 'NO AUTORIZADA')
+	WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', 'AUTORIZADA')
 	
-	WS.verifyElementPropertyValue(response, 'vchMensaje', 'Los datos se consultaron exitosamente')
+	WS.verifyElementPropertyValue(response, 'vchMensaje', 'La referencia se actualizó correctamente')
 	
 	WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
 	
 	WS.verifyElementPropertyValue(response, 'vchNombre', 'SANTOS CAZARIN CRUZ DAVID ESTUARDO')
 	
 	WS.verifyElementPropertyValue(response, 'vchReferencia', '11125120071631703225')
+	
+	
+}else {
+	
+	WS.verifyElementPropertyValue(response, 'dFechaEmision', '1900-01-01T00:00:00')
+	
+	WS.verifyElementPropertyValue(response, 'dFechaVigencia', '1900-01-01T00:00:00')
+	
+	WS.verifyElementPropertyValue(response, 'iError', 67153)
+	
+	for (int i = operation; i <= WS.getElementPropertyValue(response, 'iNoOperacionModificacion'); i++)
+		{
+		valor = i
+		}
+		
+	WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', valor)
+	
+	WS.verifyElementPropertyValue(response, 'mTotalReferencia', 0.0000)
+	
+	WS.verifyElementPropertyValue(response, 'tiBandera', 3)
+	
+	WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 0)
+	
+	WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', -1)
+	
+	WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', '')
+	
+	WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', '')
+	
+	WS.verifyElementPropertyValue(response, 'vchMensaje', 'La referencia ya se encuentra autorizada')
+	
+	WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
+	
+	WS.verifyElementPropertyValue(response, 'vchNombre', '')
+	
+	WS.verifyElementPropertyValue(response, 'vchReferencia', '')
+	
 }
-
-
 

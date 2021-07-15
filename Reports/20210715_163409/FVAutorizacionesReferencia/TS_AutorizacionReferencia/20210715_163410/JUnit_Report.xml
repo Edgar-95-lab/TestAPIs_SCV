@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_AutorizacionReferencia" time="5.985" tests="2" failures="0" errors="0">
+   <testsuite name="TS_AutorizacionReferencia" tests="2" failures="0" errors="0" time="5.985" skipped="0" timestamp="2021-07-15 16:34:17" hostname="Edgar García - DESKTOP-GI6RVR8" id="Test Suites/FVAutorizacionesReferencia/TS_AutorizacionReferencia">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Edgar Garc\u00EDa\\git\\TestAPIs_SCV\\TestAPIs_SCV\\Reports\\20210715_163409\\FVAutorizacionesReferencia\\TS_AutorizacionReferencia\\20210715_163410"/>
+         <property name="logFiles" value="C:\\Users\\Edgar Garc\u00EDa\\git\\TestAPIs_SCV\\TestAPIs_SCV\\Reports\\20210715_163409\\FVAutorizacionesReferencia\\TS_AutorizacionReferencia\\20210715_163410\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Edgar García - DESKTOP-GI6RVR8"/>
+         <property name="hostAddress" value="192.168.100.38"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.0.5.208"/>
+      </properties>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" time="2.451" classname="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" status="PASSED">
+         <system-out><![CDATA[2021-07-15 16:34:17 - [TEST_CASE][PASSED] - Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut: Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut
+
+2021-07-15 16:34:17 - [TEST_STEP][PASSED] - operation = 21021254: null
+
+2021-07-15 16:34:17 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-15 16:34:17 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/getConsultaReferenciaAut")): Send request successfully
+
+2021-07-15 16:34:18 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\git\TestAPIs_SCV\TestAPIs_SCV\Reports\20210715_163409\FVAutorizacionesReferencia\TS_AutorizacionReferencia\20210715_163410\requests\main\0.har
+
+2021-07-15 16:34:18 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-07-15 16:34:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "bResultado", true): Verify element property value successfully
+
+2021-07-15 16:34:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "dFechaEmision", "2021-07-09T00:00:00"): Verify element property value successfully
+
+2021-07-15 16:34:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "dFechaVigencia", "2021-07-09T00:00:00"): Verify element property value successfully
+
+2021-07-15 16:34:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "iError", 0): Verify element property value successfully
+
+2021-07-15 16:34:18 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - for ([i = operation, i <= getElementPropertyValue(response, "iNoOperacionModificacion"), (i++)]): null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:18 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "iNoOperacionModificacion", valor): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "mTotalReferencia", 1659.0000): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "tiBandera", 2): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "tiEstatusAutorizacion", 1): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "tiEstatusReferencia", 1): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "vchDescEstatusRef", "EMITIDO"): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "vchDescEtatusAut", "AUTORIZADA"): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "vchMensaje", "Los datos se consultaron exitosamente"): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "vchMensajeLog", ""): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "vchNombre", "SANTOS CAZARIN CRUZ DAVID ESTUARDO"): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "vchReferencia", "11125120071631703225"): Verify element property value successfully
+
+2021-07-15 16:34:19 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/getConsultaReferencia" time="2.766" classname="Test Cases/FVAutorizacionesReferencia/getConsultaReferencia" status="PASSED">
+         <system-out><![CDATA[2021-07-15 16:34:19 - [TEST_CASE][PASSED] - Test Cases/FVAutorizacionesReferencia/getConsultaReferencia: Test Cases/FVAutorizacionesReferencia/getConsultaReferencia
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - operation = 21021208: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/getConsultaReferencia")): Send request successfully
+
+2021-07-15 16:34:20 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\git\TestAPIs_SCV\TestAPIs_SCV\Reports\20210715_163409\FVAutorizacionesReferencia\TS_AutorizacionReferencia\20210715_163410\requests\main\1.har
+
+2021-07-15 16:34:20 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-07-15 16:34:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].bResultado", true): Verify element property value successfully
+
+2021-07-15 16:34:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchMensaje", "Consulta de referencia correcta"): Verify element property value successfully
+
+2021-07-15 16:34:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - for ([i = operation, i <= getElementPropertyValue(response, "[0].iNoOperacionModificacion"), (i++)]): null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:20 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iNoOperacionModificacion", valor): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iError", 0): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchReferencia", 11125120071631703225): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiOficina", 0): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchOficina", "PUEBLA I FINANZAS"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].smTipoMovimiento", 1): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchMovimiento", "ALTA VEHICULO"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iNoOperacion", 21019796): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iControl", 200002523): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchPlaca", "13DGS2"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchNombre", "SANTOS CAZARIN CRUZ DAVID ESTUARDO"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchRFC", "SACC790503PC6"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iModelo", 2020): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiClaseTipo", 71): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchSerie", "F25BKFA4903"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiCilindros", 0): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchNoMotor", "MOTORNO"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiCombustible", 77): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiTipoServicio", 86): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchProcedencia", "NACIONAL"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].dFechaExpedicion", "2021-07-15T00:00:00"): Verify element property value successfully
+
+2021-07-15 16:34:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchVigencia", "PERMANENTE"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiTramite", 2): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchCalcomania", ""): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchUsoVehiculo", "01"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iNumeroForma", 12): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchDescripcionForma", "TARJETA DE CIRCULACION"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iFolio", -1): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iIdEstatus", 1): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchEstatus", "REGISTRADO"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchNombreTramite", "SANTOS CAZARIN CRUZ DAVID ESTUARDO"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchIdentificacion", "I.F.E.                                  "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchFolioIdentificacion", "NA"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchCalcomaniaAlfanumerica", ""): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchToneladas", "2500"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchCalle", "221"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchNoExterior", "22211"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchNoInterior", ""): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchLetra", ""): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchColonia", "LAS CANOAS                                                                                          "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchLocalidad", "APATAUYAN                                                                                           "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchMunicipio", "ATEMPAN                                                                                             "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchComplemento", "PLACA= 13DGS2 #NIV= F25BKFA4903"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchDescCombustible", "GASOLINA  "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiFirma", 1): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchPuestoFirma", "SECRETARIA DE PLANEACION Y FINANZAS"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchNombreFirma", "ACT.  MARIA TERESA CASTRO CORRO"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchPuestoFirma2", "SECRETARIO DE MOVILIDAD Y TRANSPORTE"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchNombreFirma2", "MTRO. GUILLERMO ARECHIGA SANTAMARIA"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchClaveVehicular", "2020517"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchEmpresa", ""): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchCURP", "SACC790503HVZNZR00"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiBan_cve_veh", 2): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchDesc_uso", "PARTICULAR                                        "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].tiAsignacion", 1): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchMarca2", "FORD           "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchLinea2", "F - 700                  "): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-15 16:34:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].vchTipo2", "153 LPG 28000 L"): Verify element property value successfully
+
+2021-07-15 16:34:22 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-07-15 16:34:17 - [TEST_SUITE][PASSED] - TS_AutorizacionReferencia: Test Cases/FVAutorizacionesReferencia/getConsultaReferencia]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
