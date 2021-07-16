@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_AutorizacionReferencia_SU,,,,2021-07-16 14:06:24,2021-07-16 14:06:34,10.425s,FAILED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/setAutorizacionReferencia_SU,,,,2021-07-16 14:06:24,2021-07-16 14:06:28,4.630s,PASSED
+operation = 21021291,,,,2021-07-16 14:06:24,2021-07-16 14:06:24,0.001s,PASSED
+valor = 0,,,,2021-07-16 14:06:24,2021-07-16 14:06:24,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/setAutorizacionReferencia_SU""))",,,,2021-07-16 14:06:24,2021-07-16 14:06:25,0.927s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-16 14:06:25,2021-07-16 14:06:28,3.361s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferenciaAut_SU,,,,2021-07-16 14:06:28,2021-07-16 14:06:29,0.661s,FAILED
+operation = 21021254,,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.000s,PASSED
+valor = 0,,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/getConsultaReferenciaAut_SU""))",,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.187s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.008s,PASSED
+"if (getElementPropertyValue(response, ""bResultado"") == true)",,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.015s,PASSED
+else,,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.203s,FAILED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferencia_SU,,,,2021-07-16 14:06:29,2021-07-16 14:06:34,4.921s,FAILED
+operation = 21021208,,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.000s,PASSED
+valor = 0,,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/getConsultaReferencia_SU""))",,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.183s,PASSED
+fecha = new java.util.Date(),,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.004s,PASSED
+"hoy = fecha.format(""yyyy-MM-dd"") + ""T00:00:00""",,,,2021-07-16 14:06:29,2021-07-16 14:06:29,0.000s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-16 14:06:29,2021-07-16 14:06:34,4.468s,FAILED

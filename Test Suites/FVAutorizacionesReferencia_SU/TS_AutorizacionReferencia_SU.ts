@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS_DesautorizacionReferencia</name>
+   <name>TS_AutorizacionReferencia_SU</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient></mailRecipient>
+   <mailRecipient>edgargv537@gmail.com;</mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>8f1499f0-681e-4d49-b2d9-7bb840ae3303</testSuiteGuid>
+   <testSuiteGuid>e640f469-7602-4282-b231-c0527becbfec</testSuiteGuid>
    <testCaseLink>
-      <guid>dd1f8b7b-2855-4319-859a-e8926063500c</guid>
+      <guid>24e5718c-4e36-4b98-9835-20c496d2ee6a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FVAutorizacionesReferencia/setDesautorizacionReferencia</testCaseId>
+      <testCaseId>Test Cases/FVAutorizacionesReferencia_SU/setAutorizacionReferencia_SU</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b10e11be-4694-4eca-90c9-2718f9365d9c</guid>
+      <guid>322173ca-c82f-4391-933c-fdc97d9bc0dc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut</testCaseId>
+      <testCaseId>Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferenciaAut_SU</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3a9dce58-1a02-4347-8dce-726229624c90</guid>
+      <guid>85d4ed3c-779d-4530-a0c7-40f544ee0f6d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/FVAutorizacionesReferencia/getConsultaReferencia</testCaseId>
+      <testCaseId>Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferencia_SU</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

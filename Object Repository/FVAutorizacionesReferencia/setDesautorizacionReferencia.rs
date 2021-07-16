@@ -3,7 +3,7 @@
    <description></description>
    <name>setDesautorizacionReferencia</name>
    <tag></tag>
-   <elementGuidId>9fca7b2a-b6a3-4410-803e-139eeff70eb4</elementGuidId>
+   <elementGuidId>c099a4fa-6c98-4524-a3dd-2a6f67a67b79</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -27,14 +27,14 @@
       <matchCondition>equals</matchCondition>
       <name>Usuario</name>
       <type>Main</type>
-      <value>EPEREYRA</value>
+      <value>ITALIKA</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Password</name>
       <type>Main</type>
-      <value>EPEREYRA123</value>
+      <value>ITALIKA123*</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -48,7 +48,7 @@
       <matchCondition>equals</matchCondition>
       <name>Almacen</name>
       <type>Main</type>
-      <value>12</value>
+      <value>0</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>

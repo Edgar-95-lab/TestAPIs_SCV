@@ -3,10 +3,10 @@
    <description></description>
    <name>getConsultaReferencia</name>
    <tag></tag>
-   <elementGuidId>ff13add9-f891-456b-9a2d-3a4d329f5e54</elementGuidId>
+   <elementGuidId>2a1d6f16-6a38-4acb-bd3b-3304513828c5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -27,14 +27,14 @@
       <matchCondition>equals</matchCondition>
       <name>Usuario</name>
       <type>Main</type>
-      <value>EPEREYRA</value>
+      <value>ITALIKA</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Password</name>
       <type>Main</type>
-      <value>EPEREYRA123</value>
+      <value>ITALIKA123*</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -48,10 +48,10 @@
       <matchCondition>equals</matchCondition>
       <name>Almacen</name>
       <type>Main</type>
-      <value>12</value>
+      <value>0</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/getConsultaReferencia</restUrl>
@@ -61,7 +61,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

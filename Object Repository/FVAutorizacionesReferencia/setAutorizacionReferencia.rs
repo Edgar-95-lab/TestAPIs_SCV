@@ -3,10 +3,10 @@
    <description></description>
    <name>setAutorizacionReferencia</name>
    <tag></tag>
-   <elementGuidId>8b35e48b-8a76-4a57-8c60-7cd9d0d90b5c</elementGuidId>
+   <elementGuidId>4b3dbfa4-06bb-42cf-9378-8be15494b4cc</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -27,14 +27,14 @@
       <matchCondition>equals</matchCondition>
       <name>Usuario</name>
       <type>Main</type>
-      <value>EPEREYRA</value>
+      <value>ITALIKA</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Password</name>
       <type>Main</type>
-      <value>EPEREYRA123</value>
+      <value>ITALIKA123*</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -48,10 +48,10 @@
       <matchCondition>equals</matchCondition>
       <name>Almacen</name>
       <type>Main</type>
-      <value>12</value>
+      <value>0</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/setAutorizacionReferencia</restUrl>
@@ -61,7 +61,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
