@@ -27,14 +27,14 @@
       <matchCondition>equals</matchCondition>
       <name>Usuario</name>
       <type>Main</type>
-      <value>ITALIKA</value>
+      <value>EPEREYRA</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Password</name>
       <type>Main</type>
-      <value>ITALIKA123*</value>
+      <value>EPEREYRA123</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -48,7 +48,7 @@
       <matchCondition>equals</matchCondition>
       <name>Almacen</name>
       <type>Main</type>
-      <value>0</value>
+      <value>12</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>

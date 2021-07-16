@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Autorizaciones,,Proceso completo de FVAutorizacionesReferencia_SU,,2021-07-16 16:59:34,2021-07-16 16:59:44,10.307s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/setDesautorizacionReferencia_SU,,,,2021-07-16 16:59:34,2021-07-16 16:59:36,1.701s,PASSED
+operation = 21012130,,,,2021-07-16 16:59:34,2021-07-16 16:59:34,0.001s,PASSED
+valor = 0,,,,2021-07-16 16:59:34,2021-07-16 16:59:34,0.001s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/setDesautorizacionReferencia_SU""))",,,,2021-07-16 16:59:34,2021-07-16 16:59:35,0.996s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-16 16:59:35,2021-07-16 16:59:36,0.364s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/setAutorizacionReferencia_SU,,,,2021-07-16 16:59:36,2021-07-16 16:59:38,2.519s,PASSED
+operation = 21021588,,,,2021-07-16 16:59:36,2021-07-16 16:59:36,0.000s,PASSED
+valor = 0,,,,2021-07-16 16:59:36,2021-07-16 16:59:36,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/setAutorizacionReferencia_SU""))",,,,2021-07-16 16:59:36,2021-07-16 16:59:36,0.375s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-16 16:59:36,2021-07-16 16:59:38,1.906s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferencia_SU,,,,2021-07-16 16:59:38,2021-07-16 16:59:41,3.004s,PASSED
+operation = 21021588,,,,2021-07-16 16:59:39,2021-07-16 16:59:39,0.002s,PASSED
+valor = 0,,,,2021-07-16 16:59:39,2021-07-16 16:59:39,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/getConsultaReferencia_SU""))",,,,2021-07-16 16:59:39,2021-07-16 16:59:39,0.203s,PASSED
+fecha = new java.util.Date(),,,,2021-07-16 16:59:39,2021-07-16 16:59:39,0.008s,PASSED
+"hoy = fecha.format(""yyyy-MM-dd"") + ""T00:00:00""",,,,2021-07-16 16:59:39,2021-07-16 16:59:39,0.000s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-16 16:59:39,2021-07-16 16:59:41,2.525s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferencia_SU,,,,2021-07-16 16:59:41,2021-07-16 16:59:44,2.863s,PASSED
+operation = 21021588,,,,2021-07-16 16:59:41,2021-07-16 16:59:41,0.000s,PASSED
+valor = 0,,,,2021-07-16 16:59:41,2021-07-16 16:59:41,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/getConsultaReferencia_SU""))",,,,2021-07-16 16:59:41,2021-07-16 16:59:42,0.201s,PASSED
+fecha = new java.util.Date(),,,,2021-07-16 16:59:42,2021-07-16 16:59:42,0.000s,PASSED
+"hoy = fecha.format(""yyyy-MM-dd"") + ""T00:00:00""",,,,2021-07-16 16:59:42,2021-07-16 16:59:42,0.000s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-16 16:59:42,2021-07-16 16:59:44,2.645s,PASSED
