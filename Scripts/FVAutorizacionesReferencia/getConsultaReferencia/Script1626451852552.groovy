@@ -100,61 +100,7 @@ if (WS.getResponseStatusCode(response) == 200) {
 
         WS.verifyElementPropertyValue(response, '[0].vchEstatus', 'REGISTRADO')
 
-        WS.verifyElementPropertyValue(response, '[0].vchNombreTramite', 'SANTOS CAZARIN CRUZ DAVID ESTUARDO')
-
-        WS.verifyElementPropertyValue(response, '[0].vchIdentificacion', 'I.F.E.                                  ')
-
-        WS.verifyElementPropertyValue(response, '[0].vchFolioIdentificacion', 'NA')
-
-        WS.verifyElementPropertyValue(response, '[0].vchCalcomaniaAlfanumerica', '')
-
-        WS.verifyElementPropertyValue(response, '[0].vchToneladas', '2500')
-
-        WS.verifyElementPropertyValue(response, '[0].vchCalle', '221')
-
-        WS.verifyElementPropertyValue(response, '[0].vchNoExterior', '22211')
-
-        WS.verifyElementPropertyValue(response, '[0].vchNoInterior', '')
-
-        WS.verifyElementPropertyValue(response, '[0].vchLetra', '')
-
-        WS.verifyElementPropertyValue(response, '[0].vchColonia', 'LAS CANOAS                                                                                          ')
-
-        WS.verifyElementPropertyValue(response, '[0].vchLocalidad', 'APATAUYAN                                                                                           ')
-
-        WS.verifyElementPropertyValue(response, '[0].vchMunicipio', 'ATEMPAN                                                                                             ')
-
-        WS.verifyElementPropertyValue(response, '[0].vchComplemento', 'PLACA= 13DGS2 #NIV= F25BKFA4903')
-
-        WS.verifyElementPropertyValue(response, '[0].vchDescCombustible', 'GASOLINA  ')
-
-        WS.verifyElementPropertyValue(response, '[0].tiFirma', 1)
-
-        WS.verifyElementPropertyValue(response, '[0].vchPuestoFirma', 'SECRETARIA DE PLANEACION Y FINANZAS')
-
-        WS.verifyElementPropertyValue(response, '[0].vchNombreFirma', 'ACT.  MARIA TERESA CASTRO CORRO')
-
-        WS.verifyElementPropertyValue(response, '[0].vchPuestoFirma2', 'SECRETARIO DE MOVILIDAD Y TRANSPORTE')
-
-        WS.verifyElementPropertyValue(response, '[0].vchNombreFirma2', 'MTRO. GUILLERMO ARECHIGA SANTAMARIA')
-
-        WS.verifyElementPropertyValue(response, '[0].vchClaveVehicular', '2020517')
-
-        WS.verifyElementPropertyValue(response, '[0].vchEmpresa', '')
-
-        WS.verifyElementPropertyValue(response, '[0].vchCURP', 'SACC790503HVZNZR00')
-
-        WS.verifyElementPropertyValue(response, '[0].tiBan_cve_veh', 2)
-
-        WS.verifyElementPropertyValue(response, '[0].vchDesc_uso', 'PARTICULAR                                        ')
-
-        WS.verifyElementPropertyValue(response, '[0].tiAsignacion', 1)
-
-        WS.verifyElementPropertyValue(response, '[0].vchMarca2', 'FORD           ')
-
-        WS.verifyElementPropertyValue(response, '[0].vchLinea2', 'F - 700                  ')
-
-        WS.verifyElementPropertyValue(response, '[0].vchTipo2', '153 LPG 28000 L')
+        
     } else {
         if (WS.getElementPropertyValue(response, '[0].vchMensaje').equals('La referencia no se encuentra autorizada o pagada por lo que no se puede realizar la asignación de formas valoradas')) {
             WS.verifyElementPropertyValue(response, '[0].iNoOperacionModificacion', 0)
@@ -217,61 +163,7 @@ if (WS.getResponseStatusCode(response) == 200) {
 
             WS.verifyElementPropertyValue(response, '[0].vchEstatus', '0')
 
-            WS.verifyElementPropertyValue(response, '[0].vchNombreTramite', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchIdentificacion', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchFolioIdentificacion', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchCalcomaniaAlfanumerica', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchToneladas', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchCalle', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNoExterior', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNoInterior', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchLetra', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchColonia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchLocalidad', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchMunicipio', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchComplemento', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchDescCombustible', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiFirma', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchPuestoFirma', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNombreFirma', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchPuestoFirma2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNombreFirma2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchClaveVehicular', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchEmpresa', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchCURP', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiBan_cve_veh', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchDesc_uso', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiAsignacion', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchMarca2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchLinea2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchTipo2', '')
+            
         } else if (WS.getElementPropertyValue(response, '[0].vchMensaje').equals('El usuario no tiene activo un rol de entregador.')) {
             WS.verifyElementPropertyValue(response, '[0].iNoOperacionModificacion', 0)
 
@@ -333,61 +225,6 @@ if (WS.getResponseStatusCode(response) == 200) {
 
             WS.verifyElementPropertyValue(response, '[0].vchEstatus', '0')
 
-            WS.verifyElementPropertyValue(response, '[0].vchNombreTramite', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchIdentificacion', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchFolioIdentificacion', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchCalcomaniaAlfanumerica', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchToneladas', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchCalle', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNoExterior', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNoInterior', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchLetra', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchColonia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchLocalidad', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchMunicipio', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchComplemento', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchDescCombustible', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiFirma', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchPuestoFirma', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNombreFirma', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchPuestoFirma2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNombreFirma2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchClaveVehicular', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchEmpresa', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchCURP', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiBan_cve_veh', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchDesc_uso', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiAsignacion', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchMarca2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchLinea2', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchTipo2', '')
         } else {
             WS.verifyElementPropertyValue(response, '[0].vchMensaje', '0')
         }
