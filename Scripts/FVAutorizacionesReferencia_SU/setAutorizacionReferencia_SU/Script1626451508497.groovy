@@ -69,8 +69,7 @@ if(WS.getResponseStatusCode(response) == 200)
 			
 			WS.verifyElementPropertyValue(response, 'dFechaVigencia', '1900-01-01T00:00:00')
 			
-			if(WS.getElementPropertyValue(response, 'iError') == 67153)
-			{
+			
 				for (int i = operation; i <= WS.getElementPropertyValue(response, 'iNoOperacionModificacion'); i++)
 					{
 					valor = i
@@ -78,54 +77,35 @@ if(WS.getResponseStatusCode(response) == 200)
 					
 				WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', valor)
 				
-				WS.verifyElementPropertyValue(response, 'mTotalReferencia', 0.0000)
-				
-				WS.verifyElementPropertyValue(response, 'tiBandera', 3)
-				
-				WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 0)
-				
-				WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', -1)
-				
-				WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchMensaje', 'La referencia ya se encuentra autorizada')
-				
-				WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchNombre', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchReferencia', '')
-				
-			}else
-			{
-				
-				WS.verifyElementPropertyValue(response, 'iError', 67104)
+				if(WS.getElementPropertyValue(response, 'iError') > 0) 
+				{
 					
-				WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', -1)
+					
+				}else {
+					
+					WS.verifyElementPropertyValue(response, 'iError', 'No hay un número de error asignado')
+				}
+				
+				if(WS.getElementPropertyValue(response, 'vchMensaje').toString().length() > 0)
+				{
+					
+				}else {
+					
+					WS.verifyElementPropertyValue(response, 'vchMensaje', 'No hay mensaje asignado para esta operación')
+				}
+				
 				
 				WS.verifyElementPropertyValue(response, 'mTotalReferencia', 0.0000)
 				
-				WS.verifyElementPropertyValue(response, 'tiBandera', 3)
-				
-				WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 0)
-				
-				WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', -1)
-				
-				WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchMensaje', 'El usuario no tiene activo un rol de entregador.')
-				
-				WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchNombre', '')
-				
-				WS.verifyElementPropertyValue(response, 'vchReferencia', '')
-				
-			}
+			
+				if(WS.getElementPropertyValue(response, 'vchMensaje').toString().length() > 0)
+					{
+						
+					}else {
+						
+						WS.verifyElementPropertyValue(response, 'vchMensaje', 'No hay mensaje asignado para esta operación')
+					}
+			
 			
 		}
 		
@@ -135,8 +115,7 @@ if(WS.getResponseStatusCode(response) == 200)
 	println "Acceso no autorizado"
 	
 }else {
-	WS.verifyResponseStatusCode(response, 200)
-	WS.verifyResponseStatusCode(response, 401)
+	WS.verifyResponseStatusCode(response, 'Nuevo error encontrado')
 	println "Nuevo error encontrado"
 }
 
