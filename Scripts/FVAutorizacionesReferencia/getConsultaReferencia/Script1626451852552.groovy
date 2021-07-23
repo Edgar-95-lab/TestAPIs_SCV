@@ -18,224 +18,176 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.util.Date as Date
 
-int operation = 21021208
+int operation = 21022095
 
 int valor = 0
 
 response = WS.sendRequest(findTestObject('FVAutorizacionesReferencia/getConsultaReferencia'))
 
+/**
+ * Obtener la fecha para evaluar posteriormente la asignación deseada.
+ * */
 Date fecha = new Date()
 
 String hoy = fecha.format('yyyy-MM-dd') + 'T00:00:00'
 
+/**
+ * Evaluación para códigos de estado de respuesta HTTP
+ * */
 if (WS.getResponseStatusCode(response) == 200) {
+	/**
+	 * Evaluar la respuesta booleana de acuerdo al estado de consulta
+	 * */
     if (WS.getElementPropertyValue(response, '[0].bResultado') == true) {
-        WS.verifyElementPropertyValue(response, '[0].vchMensaje', 'Consulta de referencia correcta')
-
+		/**
+		 * Condición para verificar la asignación correcta de un mensaje.
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchMensaje').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchMensaje', 'No existe mensaje asignado')
+			
+		}
+		/**
+		 * Ciclo para verificar que el parámetro a evaluar realmenete se está actualizando.
+		 * */
         for (int i = operation; i <= WS.getElementPropertyValue(response, '[0].iNoOperacionModificacion'); i++) {
             valor = i
         }
         
         WS.verifyElementPropertyValue(response, '[0].iNoOperacionModificacion', valor)
-
+		/**
+		 * Evaluar que el código de error sea siempre = 0. Ya que [0].bResultado se encuentra en true.
+		 * */
         WS.verifyElementPropertyValue(response, '[0].iError', 0)
+		/**
+		 * Verificar que la longitud de la referencia sea igual a 20.
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchReferencia').toString().length() != 20)
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchReferencia', 'La longitud en vchReferencia es incorrecta')
+			
+		}
+		/**
+		 * Verificar la relación entre tiOficina y vchOficina
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].tiOficina') < 0 || WS.getElementPropertyValue(response, '[0].vchOficina').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].tiOficina', 'Verificar número de oficina')
+			
+		    WS.verifyElementPropertyValue(response, '[0].vchOficina', 'verificar vchOficina')
+			
+		}
+		/**
+		 * Verificar la relación entre smTipoMovimiento y vchMovimiento
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].smTipoMovimiento') < 0 || WS.getElementPropertyValue(response, '[0].vchMovimiento').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].smTipoMovimiento', 'Verificar número en Tipo de movimiento')
+				
+			WS.verifyElementPropertyValue(response, '[0].vchMovimiento', 'verificar vchMovimiento')
+				
+		}
+		/**
+		 * Verificar que exista contenido en vchPlaca
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchPlaca').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchPlaca', 'No hay registro de placa')
+		}
+		/**
+		 * Verificar que exista un nombre asignado
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchNombre').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchNombre', 'No se muestra el nombre')
+		}
 
-        WS.verifyElementPropertyValue(response, '[0].vchReferencia', 11125120071631703225)
+		/**
+		 * Verificar longitud del RFC
+		 * */
+		if(!(WS.getElementPropertyValue(response, '[0].vchRFC').toString().length() == 12 || WS.getElementPropertyValue(response, '[0].vchRFC').toString().length() == 13))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchRFC', 'Longitud incorrecta en el RFC')
+		}
 
-        WS.verifyElementPropertyValue(response, '[0].tiOficina', 0)
-
-        WS.verifyElementPropertyValue(response, '[0].vchOficina', 'PUEBLA I FINANZAS')
-
-        WS.verifyElementPropertyValue(response, '[0].smTipoMovimiento', 1)
-
-        WS.verifyElementPropertyValue(response, '[0].vchMovimiento', 'ALTA VEHICULO')
-
-        WS.verifyElementPropertyValue(response, '[0].iNoOperacion', 21019796)
-
-        WS.verifyElementPropertyValue(response, '[0].iControl', 200002523)
-
-        WS.verifyElementPropertyValue(response, '[0].vchPlaca', '13DGS2')
-
-        WS.verifyElementPropertyValue(response, '[0].vchNombre', 'SANTOS CAZARIN CRUZ DAVID ESTUARDO')
-
-        WS.verifyElementPropertyValue(response, '[0].vchRFC', 'SACC790503PC6')
-
-        WS.verifyElementPropertyValue(response, '[0].iModelo', 2020)
-
-        WS.verifyElementPropertyValue(response, '[0].tiClaseTipo', 71)
-
-        WS.verifyElementPropertyValue(response, '[0].vchSerie', 'F25BKFA4903')
-
-        WS.verifyElementPropertyValue(response, '[0].tiCilindros', 0)
-
-        WS.verifyElementPropertyValue(response, '[0].vchNoMotor', 'MOTORNO')
-
-        WS.verifyElementPropertyValue(response, '[0].tiCombustible', 77)
-
-        WS.verifyElementPropertyValue(response, '[0].tiTipoServicio', 86)
-
-        WS.verifyElementPropertyValue(response, '[0].vchProcedencia', 'NACIONAL')
-
+		/**
+		 * Verificar que la fehca asignada sea correcta 
+		 * */
         if (WS.getElementPropertyValue(response, '[0].dFechaExpedicion').equals('1900-01-01T00:00:00')) {
-            WS.verifyElementPropertyValue(response, '[0].dFechaExpedicion', 'Error: 1900-01-01T00:00:00')
-        } else {
-            WS.verifyElementPropertyValue(response, '[0].dFechaExpedicion', WS.getElementPropertyValue(response, '[0].dFechaExpedicion'))
-        }
+            WS.verifyElementPropertyValue(response, '[0].dFechaExpedicion', 'La fecha no se encuentra correcta: 1900-01-01T00:00:00')
+			
+        } 
         
-        WS.verifyElementPropertyValue(response, '[0].vchVigencia', 'PERMANENTE')
+		/**
+		 * Verificar que la fehca asignada sea correcta
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].iNumeroForma') < 0 || WS.getElementPropertyValue(response, '[0].vchDescripcionForma').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].iNumeroForma', 'Verificar número en iNumeroForma')
+			
+			WS.verifyElementPropertyValue(response, '[0].vchDescripcionForma', 'Falta decripción en la forma')
+			
+		}
+        
+		/**
+		 * Verificar el estatus
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchEstatus').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchEstatus', 'Falta mostrar mensaje en estatus')
+		}
+		
+		/**
+		 * Verificar relación entre vchIdentificacion y vchFolioIdentificacion
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchIdentificacion').toString().equals('') || WS.getElementPropertyValue(response, '[0].vchFolioIdentificacion').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchIdentificacion', 'Verificar vchIdentificacion')
+			
+			WS.verifyElementPropertyValue(response, '[0].vchFolioIdentificacion', 'Falta folio en vchFolioIdentificacion')
+			
+		}
+		
+		/**
+		 * Verificar clave vehicular
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchClaveVehicular').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchClaveVehicular', 'Falta mostrar clave vehicular')
+		}
 
-        WS.verifyElementPropertyValue(response, '[0].tiTramite', 2)
-
-        WS.verifyElementPropertyValue(response, '[0].vchCalcomania', '')
-
-        WS.verifyElementPropertyValue(response, '[0].vchUsoVehiculo', '01')
-
-        WS.verifyElementPropertyValue(response, '[0].iNumeroForma', 12)
-
-        WS.verifyElementPropertyValue(response, '[0].vchDescripcionForma', 'TARJETA DE CIRCULACION')
-
-        WS.verifyElementPropertyValue(response, '[0].iFolio', -1)
-
-        WS.verifyElementPropertyValue(response, '[0].iIdEstatus', 1)
-
-        WS.verifyElementPropertyValue(response, '[0].vchEstatus', 'REGISTRADO')
-
+		/**
+		 * Verificar longitud de la CURP
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchCURP').toString().length() != 18)
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchCURP', 'Longitud incorrecta en CURP')
+		}
         
     } else {
-        if (WS.getElementPropertyValue(response, '[0].vchMensaje').equals('La referencia no se encuentra autorizada o pagada por lo que no se puede realizar la asignación de formas valoradas')) {
-            WS.verifyElementPropertyValue(response, '[0].iNoOperacionModificacion', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].iError', 67112)
-
-            WS.verifyElementPropertyValue(response, '[0].vchReferencia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiOficina', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchOficina', '')
-
-            WS.verifyElementPropertyValue(response, '[0].smTipoMovimiento', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchMovimiento', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iNoOperacion', -1)
-
-            WS.verifyElementPropertyValue(response, '[0].iControl', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchPlaca', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNombre', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchRFC', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iModelo', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].tiClaseTipo', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchSerie', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiCilindros', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchNoMotor', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiCombustible', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].tiTipoServicio', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchProcedencia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].dFechaExpedicion', '1900-01-01T00:00:00')
-
-            WS.verifyElementPropertyValue(response, '[0].vchVigencia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiTramite', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchCalcomania', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchUsoVehiculo', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iNumeroForma', -1)
-
-            WS.verifyElementPropertyValue(response, '[0].vchDescripcionForma', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iFolio', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].iIdEstatus', -1)
-
-            WS.verifyElementPropertyValue(response, '[0].vchEstatus', '0')
+		/**
+		 * Condición para verificar la asignación correcta de un mensaje.
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].vchMensaje').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, '[0].vchMensaje', 'No existe mensaje asignado')
+			
+		}
+		
+		/**
+		 * Verificar la asignación de código de error
+		 * */
+		if(WS.getElementPropertyValue(response, '[0].iError') <= 0)
+		{
+			WS.verifyElementPropertyValue(response, '[0].iError', 'No existe código de error asignado')
+			
+		}
 
             
-        } else if (WS.getElementPropertyValue(response, '[0].vchMensaje').equals('El usuario no tiene activo un rol de entregador.')) {
-            WS.verifyElementPropertyValue(response, '[0].iNoOperacionModificacion', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].iError', 67104)
-
-            WS.verifyElementPropertyValue(response, '[0].vchReferencia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiOficina', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchOficina', '')
-
-            WS.verifyElementPropertyValue(response, '[0].smTipoMovimiento', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchMovimiento', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iNoOperacion', -1)
-
-            WS.verifyElementPropertyValue(response, '[0].iControl', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchPlaca', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchNombre', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchRFC', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iModelo', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].tiClaseTipo', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchSerie', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiCilindros', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchNoMotor', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiCombustible', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].tiTipoServicio', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchProcedencia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].dFechaExpedicion', '1900-01-01T00:00:00')
-
-            WS.verifyElementPropertyValue(response, '[0].vchVigencia', '')
-
-            WS.verifyElementPropertyValue(response, '[0].tiTramite', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].vchCalcomania', '')
-
-            WS.verifyElementPropertyValue(response, '[0].vchUsoVehiculo', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iNumeroForma', -1)
-
-            WS.verifyElementPropertyValue(response, '[0].vchDescripcionForma', '')
-
-            WS.verifyElementPropertyValue(response, '[0].iFolio', 0)
-
-            WS.verifyElementPropertyValue(response, '[0].iIdEstatus', -1)
-
-            WS.verifyElementPropertyValue(response, '[0].vchEstatus', '0')
-
-        } else {
-            WS.verifyElementPropertyValue(response, '[0].vchMensaje', '0')
-        }
     }
 } else if (WS.getResponseStatusCode(response) == 401) {
     println('Acceso no autorizado')
 } else {
-    WS.verifyResponseStatusCode(response, 200)
-
-    WS.verifyResponseStatusCode(response, 401)
-
-    println('Nuevo error encontrado')
+    WS.verifyResponseStatusCode(response, 'Nuevo error encontrado')
 }
 

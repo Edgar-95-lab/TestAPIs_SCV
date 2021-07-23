@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;vchReferencia\&quot;: \&quot;11125120071631703225\&quot;,\n    \&quot;iNoOperacion\&quot;: -1,\n    \&quot;iNoOperacionModificacion\&quot;: -1\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;vchReferencia\&quot;: \&quot;11125000043729870250\&quot;,\n    \&quot;iNoOperacion\&quot;: -1,\n    \&quot;iNoOperacionModificacion\&quot;: -1\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -27,14 +27,14 @@
       <matchCondition>equals</matchCondition>
       <name>Usuario</name>
       <type>Main</type>
-      <value>ITALIKA</value>
+      <value>EPEREYRA</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Password</name>
       <type>Main</type>
-      <value>ITALIKA123*</value>
+      <value>EPEREYRA123</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -48,7 +48,7 @@
       <matchCondition>equals</matchCondition>
       <name>Almacen</name>
       <type>Main</type>
-      <value>0</value>
+      <value>12</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
