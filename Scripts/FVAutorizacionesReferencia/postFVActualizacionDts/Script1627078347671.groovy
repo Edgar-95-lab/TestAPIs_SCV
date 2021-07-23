@@ -80,7 +80,7 @@ if (WS.getResponseStatusCode(response) == 200) {
 		{
 			WS.verifyElementPropertyValue(response, 'vchRFC', 'Longitud incorrecta en el RFC')
 		
-
+		}
 		/**
 		 * Verificar que la fehca asignada sea correcta
 		 * */
