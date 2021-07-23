@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>setDesautorizacionReferencia</name>
+   <name>postFVActualizacionDts</name>
    <tag></tag>
-   <elementGuidId>c099a4fa-6c98-4524-a3dd-2a6f67a67b79</elementGuidId>
+   <elementGuidId>1bddbf0e-f953-4b11-b555-e53d5e1e648f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;vchReferencia\&quot;: \&quot;11125000043729870250\&quot;,\n  \&quot;vchObservaciones\&quot;: \&quot;Desautorizacion 1\&quot;,\n  \&quot;iNoOperacionModificacion\&quot;: -1\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;vchReferencia\&quot;: \&quot;11125000043729870250\&quot;,\n    \&quot;iNoOperacion\&quot;: -1,\n    \&quot;iCodigoFormaValorada\&quot;: 12,\n    \&quot;iFolio\&quot;: -1,\n    \&quot;iNoOperacionModificacion\&quot;: -1\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -51,17 +51,17 @@
       <value>12</value>
    </httpHeaderProperties>
    <katalonVersion>8.0.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/setDesautorizacionReferencia</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>http://localhost:53513/api/FVAutorizacionesReferencia/postFVActualizacionDts</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

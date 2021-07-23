@@ -17,130 +17,97 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int operation = 21021588
+int operation = 21022144
 
 int valor = 0
 
 response = WS.sendRequest(findTestObject('FVAutorizacionesReferencia/getConsultaReferenciaAut'))
 
-WS.verifyResponseStatusCode(response, 200)
+/**
+ * Evaluación para códigos de estado de respuesta HTTP
+ * */
+if (WS.getResponseStatusCode(response) == 200) {
+	/**
+	 * Evaluar la respuesta booleana de acuerdo al estado de consulta
+	 * */
+	if(WS.getElementPropertyValue(response, 'bResultado') == true)
+	{
+		/**
+		 * Evaluar que la fecha se muestre correctamente
+		 * */
+		if(WS.getElementPropertyValue(response, 'dFechaEmision').toString().equals('1900-01-01T00:00:00') || WS.getElementPropertyValue(response, 'dFechaVigencia').toString().equals('1900-01-01T00:00:00'))
+		{
+			WS.verifyElementPropertyValue(response, 'dFechaEmision', 'La fecha no se encuentra correcta: 1900-01-01T00:00:00')
+			WS.verifyElementPropertyValue(response, 'dFechaVigencia', 'La fecha no se encuentra correcta: 1900-01-01T00:00:00')
+			
+		}
+		/**
+		 * Evaluar que el código de error sea siempre = 0.
+		 * */
+		WS.verifyElementPropertyValue(response, 'iError', 0)
+		/**
+		 * Verificar la existencia de estatusReferencia
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchDescEstatusRef').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', 'No se muestra estatus')
+		}
+		/**
+		 * Verificar la existencia de estatusAut
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchDescEtatusAut').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', 'No se muestra estatus')
+		}
+		/**
+		 * Verificar la existencia de mensaje 
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchMensaje').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchMensaje', 'No se muestra mensaje')
+		}
+		/**
+		 * Verificar nombre registrado
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchNombre').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchClaveVehicular', 'Falta mostrar el nombre')
+		}
 
-if (WS.getElementPropertyValue(response, 'bResultado') == true) {
+		/**
+		 * Verificar la longitud de la referencia
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchReferencia').toString().length() != 20)
+		{
+			WS.verifyElementPropertyValue(response, 'vchReferencia', 'Longitud incorrecta en Referencia')
+		}
+		
+		
+	}else
+	{
+		/**
+		 * Condición para verificar la asignación correcta de un mensaje.
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchMensaje').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchMensaje', 'No existe mensaje asignado')
+			
+		}
+		
+		/**
+		 * Verificar la asignación de código de error
+		 * */
+		if(WS.getElementPropertyValue(response, 'iError') <= 0)
+		{
+			WS.verifyElementPropertyValue(response, 'iError', 'No existe código de error asignado')
+			
+		}
+		
+	}
 	
-    if (WS.getElementPropertyValue(response, 'tiBandera') == 2) {
-        WS.verifyElementPropertyValue(response, 'dFechaEmision', '2021-07-09T00:00:00')
-
-        WS.verifyElementPropertyValue(response, 'dFechaVigencia', '2021-07-09T00:00:00')
-
-        WS.verifyElementPropertyValue(response, 'iError', 0)
-
-        for (int i = operation; i <= WS.getElementPropertyValue(response, 'iNoOperacionModificacion'); i++) {
-            valor = i
-        }
-        
-        WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', valor)
-
-        WS.verifyElementPropertyValue(response, 'mTotalReferencia', 1659.0000)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 1)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', 1)
-
-        WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', 'EMITIDO')
-
-        WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', 'AUTORIZADA')
-
-        WS.verifyElementPropertyValue(response, 'vchMensaje', 'Los datos se consultaron exitosamente')
-
-        WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
-
-        WS.verifyElementPropertyValue(response, 'vchNombre', 'SANTOS CAZARIN CRUZ DAVID ESTUARDO')
-
-        WS.verifyElementPropertyValue(response, 'vchReferencia', '11125120071631703225')
-    } else {
-        WS.verifyElementPropertyValue(response, 'dFechaEmision', '2021-07-09T00:00:00')
-
-        WS.verifyElementPropertyValue(response, 'dFechaVigencia', '2021-07-09T00:00:00')
-
-        WS.verifyElementPropertyValue(response, 'iError', 0)
-
-        for (int i = operation; i <= WS.getElementPropertyValue(response, 'iNoOperacionModificacion'); i++) {
-            valor = i
-        }
-        
-        WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', valor)
-
-        WS.verifyElementPropertyValue(response, 'mTotalReferencia', 1659.0000)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 0)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', 1)
-
-        WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', 'EMITIDO')
-
-        WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', 'NO AUTORIZADA')
-
-        WS.verifyElementPropertyValue(response, 'vchMensaje', 'Los datos se consultaron exitosamente')
-
-        WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
-
-        WS.verifyElementPropertyValue(response, 'vchNombre', 'SANTOS CAZARIN CRUZ DAVID ESTUARDO')
-
-        WS.verifyElementPropertyValue(response, 'vchReferencia', '11125120071631703225')
-    }
+} else if (WS.getResponseStatusCode(response) == 401) {
+	println('Acceso no autorizado')
 } else {
-    WS.verifyElementPropertyValue(response, 'dFechaEmision', '1900-01-01T00:00:00')
-
-    WS.verifyElementPropertyValue(response, 'dFechaVigencia', '1900-01-01T00:00:00')
-
-    if (WS.getElementPropertyValue(response, 'iError') == 67104) {
-        WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', -1)
-
-        WS.verifyElementPropertyValue(response, 'mTotalReferencia', 0.0000)
-
-        WS.verifyElementPropertyValue(response, 'tiBandera', 3)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 0)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', -1)
-
-        WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', '')
-
-        WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', '')
-
-        WS.verifyElementPropertyValue(response, 'vchMensaje', 'El usuario no tiene activo un rol de entregador.')
-
-        WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
-
-        WS.verifyElementPropertyValue(response, 'vchNombre', '')
-
-        WS.verifyElementPropertyValue(response, 'vchReferencia', '')
-    } else {
-        for (int i = operation; i <= WS.getElementPropertyValue(response, 'iNoOperacionModificacion'); i++) {
-            valor = i
-        }
-        
-        WS.verifyElementPropertyValue(response, 'iNoOperacionModificacion', valor)
-
-        WS.verifyElementPropertyValue(response, 'mTotalReferencia', 0.0000)
-
-        WS.verifyElementPropertyValue(response, 'tiBandera', 3)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusAutorizacion', 0)
-
-        WS.verifyElementPropertyValue(response, 'tiEstatusReferencia', -1)
-
-        WS.verifyElementPropertyValue(response, 'vchDescEstatusRef', '')
-
-        WS.verifyElementPropertyValue(response, 'vchDescEtatusAut', '')
-
-        WS.verifyElementPropertyValue(response, 'vchMensaje', 'No existen operaciones con entrega de formas valoradas.')
-
-        WS.verifyElementPropertyValue(response, 'vchMensajeLog', '')
-
-        WS.verifyElementPropertyValue(response, 'vchNombre', '')
-
-        WS.verifyElementPropertyValue(response, 'vchReferencia', '')
-    }
+	WS.verifyResponseStatusCode(response, 'Nuevo error encontrado')
 }
 
