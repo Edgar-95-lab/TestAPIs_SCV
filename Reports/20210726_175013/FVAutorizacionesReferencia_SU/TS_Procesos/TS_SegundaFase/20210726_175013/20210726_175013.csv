@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_SegundaFase,,,,2021-07-26 17:50:20,2021-07-26 17:50:34,14.339s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferencia_SU,,,,2021-07-26 17:50:20,2021-07-26 17:50:33,12.744s,PASSED
+operation = 21021588,,,,2021-07-26 17:50:21,2021-07-26 17:50:21,0.001s,PASSED
+valor = 0,,,,2021-07-26 17:50:21,2021-07-26 17:50:21,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/getConsultaReferencia_SU""))",,,,2021-07-26 17:50:21,2021-07-26 17:50:22,1.106s,PASSED
+fecha = new java.util.Date(),,,,2021-07-26 17:50:22,2021-07-26 17:50:22,0.006s,PASSED
+"hoy = fecha.format(""yyyy-MM-dd"") + ""T00:00:00""",,,,2021-07-26 17:50:22,2021-07-26 17:50:22,0.000s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-26 17:50:22,2021-07-26 17:50:33,11.212s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/postFVCambioFolio,,,,2021-07-26 17:50:33,2021-07-26 17:50:33,0.437s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/postFVCambioFolio""))",,,,2021-07-26 17:50:33,2021-07-26 17:50:33,0.151s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-26 17:50:33,2021-07-26 17:50:33,0.046s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/postFVCambioFolioXCancelacion,,,,2021-07-26 17:50:33,2021-07-26 17:50:34,0.441s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/postFVCambioFolioXCancelacion""))",,,,2021-07-26 17:50:34,2021-07-26 17:50:34,0.148s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-26 17:50:34,2021-07-26 17:50:34,0.039s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/postFVActualizacionDts,,,,2021-07-26 17:50:34,2021-07-26 17:50:34,0.481s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/postFVActualizacionDts""))",,,,2021-07-26 17:50:34,2021-07-26 17:50:34,0.163s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-26 17:50:34,2021-07-26 17:50:34,0.038s,PASSED
