@@ -27,7 +27,63 @@ if (WS.getResponseStatusCode(response) == 200) {
 	 * Evaluar la respuesta booleana de acuerdo al estado de consulta
 	 * */
 	if (WS.getElementPropertyValue(response, 'bResultado') == true) {
+		/**
+		 * Verificar la existencia de mensaje
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchMensaje').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchMensaje', 'No se muestra mensaje')
+		}
+		/**
+		 * Verificar que el código de error se encuentre en 0
+		 * */
+		WS.verifyElementPropertyValue(response, 'iError', 0)
+		/**
+		 * Verificar la relación entre tiOficina y vchOficina
+		 * */
+		if(WS.getElementPropertyValue(response, 'tiOficina') < 0 || WS.getElementPropertyValue(response, 'vchOficina').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'tiOficina', 'Verificar número de oficina')
+			
+			WS.verifyElementPropertyValue(response, '.vchOficina', 'verificar vchOficina')
+			
+		}
+		/**
+		 * Verificar que exista un nombre asignado
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchNombre').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchNombre', 'No se muestra el nombre')
+		}
+
+		/**
+		 * Verificar longitud del RFC
+		 * */
+		if(!(WS.getElementPropertyValue(response, 'vchRFC').toString().length() == 12 || WS.getElementPropertyValue(response, 'vchRFC').toString().length() == 13))
+		{
+			WS.verifyElementPropertyValue(response, 'vchRFC', 'Longitud incorrecta en el RFC')
 		
+		}
+		
+		/**
+		 * Verificar que la fehca asignada sea correcta
+		 * */
+		if(WS.getElementPropertyValue(response, 'iNumeroForma') < 0 || WS.getElementPropertyValue(response, '[0].vchDescripcionForma').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'iNumeroForma', 'Verificar número en iNumeroForma')
+			
+			WS.verifyElementPropertyValue(response, 'vchDescripcionForma', 'Falta decripción en la forma')
+			
+		}
+		
+		/**
+		 * Verificar el estatus
+		 * */
+		if(WS.getElementPropertyValue(response, 'iIdEstatus') <= 0 || WS.getElementPropertyValue(response, 'vchEstatus').toString().equals('0'))
+		{
+			WS.verifyElementPropertyValue(response, 'iIdEstatus', 'verificar el id asignado')
+			WS.verifyElementPropertyValue(response, 'vchEstatus', 'Falta mostrar mensaje en estatus')
+		}
 		
 	} else {
 		/**

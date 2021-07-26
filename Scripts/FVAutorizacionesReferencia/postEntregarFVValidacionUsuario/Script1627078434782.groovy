@@ -27,6 +27,47 @@ if (WS.getResponseStatusCode(response) == 200) {
 	 * Evaluar la respuesta booleana de acuerdo al estado de consulta
 	 * */
 	if (WS.getElementPropertyValue(response, 'bResultado') == true) {
+		/**
+		 * Verificar la existencia de mensaje
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchMensaje').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchMensaje', 'No se muestra mensaje')
+		}
+		/**
+		 * Verificar que el código de error se encuentre en 0
+		 * */
+		WS.verifyElementPropertyValue(response, 'iError', 0)
+		/**
+		 * Verificar la relación de usuario e id
+		 * */
+		if(WS.getElementPropertyValue(response, 'iIdUsuario') <= 0 || WS.getElementPropertyValue(response, 'vchUsuario').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'iIdUsuario', 'verificar el id asignado')
+			WS.verifyElementPropertyValue(response, 'vchUsuario', 'Falta mostrar el nombre')
+		}
+		/**
+		 * Verificar la relación de oficina y des_oficina
+		 * */
+		if(WS.getElementPropertyValue(response, 'cve_oficina') < 0 || WS.getElementPropertyValue(response, 'vchDesc_Oficina').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'cve_oficina', 'verificar el id asignado')
+			WS.verifyElementPropertyValue(response, 'vchDesc_Oficina', 'Falta mostrar la oficina correspondiente')
+		}
+		/**
+		 * Verificar el nombre de usuario
+		 * */
+		if(WS.getElementPropertyValue(response, 'vchNombreUsuario').toString().equals(''))
+		{
+			WS.verifyElementPropertyValue(response, 'vchNombreUsuario', 'No se muestra nombre')
+		}
+		/**
+		 * Verificar la asignación del id
+		 * */
+		if(WS.getElementPropertyValue(response, 'iIdPersona') <= 0)
+		{
+			WS.verifyElementPropertyValue(response, 'iIdPersona', 'No se muestra el id asignado')
+		}
 		
 		
 	} else {

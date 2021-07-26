@@ -49,23 +49,6 @@ if (WS.getResponseStatusCode(response) == 200) {
 			
 		}
 		/**
-		 * Verificar la relación entre smTipoMovimiento y vchMovimiento
-		 * */
-		if(WS.getElementPropertyValue(response, 'smTipoMovimiento') < 0 || WS.getElementPropertyValue(response, 'vchMovimiento').toString().equals(''))
-		{
-			WS.verifyElementPropertyValue(response, 'smTipoMovimiento', 'Verificar número en Tipo de movimiento')
-				
-			WS.verifyElementPropertyValue(response, 'vchMovimiento', 'verificar vchMovimiento')
-			
-		}
-		/**
-		 * Verificar que exista contenido en vchPlaca
-		 * */
-		if(WS.getElementPropertyValue(response, 'vchPlaca').toString().equals(''))
-		{
-			WS.verifyElementPropertyValue(response, 'vchPlaca', 'No hay registro de placa')
-		}
-		/**
 		 * Verificar que exista un nombre asignado
 		 * */
 		if(WS.getElementPropertyValue(response, 'vchNombre').toString().equals(''))
@@ -80,13 +63,6 @@ if (WS.getResponseStatusCode(response) == 200) {
 		{
 			WS.verifyElementPropertyValue(response, 'vchRFC', 'Longitud incorrecta en el RFC')
 		
-		}
-		/**
-		 * Verificar que la fehca asignada sea correcta
-		 * */
-		if (WS.getElementPropertyValue(response, 'dFechaExpedicion').equals('1900-01-01T00:00:00')) {
-			WS.verifyElementPropertyValue(response, 'dFechaExpedicion', 'La fecha no se encuentra correcta: 1900-01-01T00:00:00')
-			
 		}
 		
 		/**
@@ -103,37 +79,12 @@ if (WS.getResponseStatusCode(response) == 200) {
 		/**
 		 * Verificar el estatus
 		 * */
-		if(WS.getElementPropertyValue(response, 'vchEstatus').toString().equals(''))
+		if(WS.getElementPropertyValue(response, 'iIdEstatus') <= 0 || WS.getElementPropertyValue(response, 'vchEstatus').toString().equals(''))
 		{
+			WS.verifyElementPropertyValue(response, 'iIdEstatus', 'verificar el id asignado')
 			WS.verifyElementPropertyValue(response, 'vchEstatus', 'Falta mostrar mensaje en estatus')
 		}
-		
-		/**
-		 * Verificar relación entre vchIdentificacion y vchFolioIdentificacion
-		 * */
-		if(WS.getElementPropertyValue(response, 'vchIdentificacion').toString().equals('') || WS.getElementPropertyValue(response, 'vchFolioIdentificacion').toString().equals(''))
-		{
-			WS.verifyElementPropertyValue(response, 'vchIdentificacion', 'Verificar vchIdentificacion')
-			
-			WS.verifyElementPropertyValue(response, 'vchFolioIdentificacion', 'Falta folio en vchFolioIdentificacion')
-		
-		}
-		
-		/**
-		 * Verificar clave vehicular
-		 * */
-		if(WS.getElementPropertyValue(response, 'vchClaveVehicular').toString().equals(''))
-		{
-			WS.verifyElementPropertyValue(response, 'vchClaveVehicular', 'Falta mostrar clave vehicular')
-		}
 
-		/**
-		 * Verificar longitud de la CURP
-		 * */
-		if(WS.getElementPropertyValue(response, 'vchCURP').toString().length() != 18)
-		{
-			WS.verifyElementPropertyValue(response, 'vchCURP', 'Longitud incorrecta en CURP')
-		}
 		
 	} else {
 		/**

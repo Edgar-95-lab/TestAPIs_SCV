@@ -92,6 +92,11 @@
 			<location>C:/Users/EDGARG~1/AppData/Local/Temp/Katalon/Web Services/kat-5682442758359231638.groovy</location>
 		</link>
 		<link>
+			<name>kat-5801099319475682283.groovy</name>
+			<type>1</type>
+			<location>C:/Users/EDGARG~1/AppData/Local/Temp/Katalon/Web Services/kat-5801099319475682283.groovy</location>
+		</link>
+		<link>
 			<name>kat-6390171390304883331.groovy</name>
 			<type>1</type>
 			<location>C:/Users/EDGARG~1/AppData/Local/Temp/Katalon/Web Services/kat-6390171390304883331.groovy</location>
@@ -112,9 +117,19 @@
 			<location>C:/Users/EDGARG~1/AppData/Local/Temp/Katalon/Web Services/kat-8741144618697579180.groovy</location>
 		</link>
 		<link>
+			<name>kat-8787880020380005604.groovy</name>
+			<type>1</type>
+			<location>C:/Users/EDGARG~1/AppData/Local/Temp/Katalon/Web Services/kat-8787880020380005604.groovy</location>
+		</link>
+		<link>
 			<name>kat-8808845233016920476.groovy</name>
 			<type>1</type>
 			<location>C:/Users/EDGARG~1/AppData/Local/Temp/Katalon/Web Services/kat-8808845233016920476.groovy</location>
+		</link>
+		<link>
+			<name>kat-9151885515238326826.groovy</name>
+			<type>1</type>
+			<location>C:/Users/EDGARG~1/AppData/Local/Temp/Katalon/Web Services/kat-9151885515238326826.groovy</location>
 		</link>
 	</linkedResources>
 	<filteredResources>
@@ -291,6 +306,24 @@
 		</filter>
 		<filter>
 			<id>1627080925353</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1627314838490</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1627314838498</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
