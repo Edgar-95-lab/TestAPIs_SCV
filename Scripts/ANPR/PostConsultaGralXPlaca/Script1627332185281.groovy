@@ -63,8 +63,9 @@ if (WS.getResponseStatusCode(response) == 200) {
         /**
 		 * Verificar el registro correcto del motor
 		 * */
-        if (WS.getElementPropertyValue(response, 'vchNoMotor').toString().equals('') || (WS.getElementPropertyValue(response, 
-            'vchNoMotor').toString().trim().length() != 17)) {
+        if (WS.getElementPropertyValue(response, 'vchNoMotor').toString().equals('') || !((WS.getElementPropertyValue(response, 
+            'vchNoMotor').toString().trim().length() >= 11) && (WS.getElementPropertyValue(response, 
+            'vchNoMotor').toString().trim().length() <= 17))) {
             WS.verifyElementPropertyValue(response, 'vchNoMotor', 'longitud en el número de motor incorrecta')
         }
         
