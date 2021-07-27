@@ -22,7 +22,7 @@ response = WS.sendRequest(findTestObject('ANPR/PostConsultaGralXPlaca'))
 /**
  * Evaluación para códigos de estado de respuesta HTTP
  * */
-if (WS.getResponseStatusCode(response) == 200) {
+if (WS.verifyResponseStatusCodeInRange(response, 200, 204) == true) {
     /**
 	 * Evaluar la respuesta booleana de acuerdo al estado de consulta
 	 * */
@@ -107,8 +107,6 @@ if (WS.getResponseStatusCode(response) == 200) {
             WS.verifyElementPropertyValue(response, 'iError', 'No existe código de error asignado')
         }
     }
-} else if (WS.getResponseStatusCode(response) == 401) {
-    println('Acceso no autorizado')
 } else {
-    WS.verifyResponseStatusCode(response, 'Nuevo error encontrado')
+    WS.verifyResponseStatusCode(response, 'Error en la petición, verifique el número correspondiente')
 }

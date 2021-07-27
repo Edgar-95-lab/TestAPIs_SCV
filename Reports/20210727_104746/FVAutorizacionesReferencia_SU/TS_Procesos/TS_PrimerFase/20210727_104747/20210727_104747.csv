@@ -1,0 +1,34 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_PrimerFase,,,,2021-07-27 10:47:55,2021-07-27 10:48:05,10.549s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut,,,,2021-07-27 10:47:55,2021-07-27 10:47:56,1.570s,PASSED
+operation = 21022144,,,,2021-07-27 10:47:55,2021-07-27 10:47:55,0.001s,PASSED
+valor = 0,,,,2021-07-27 10:47:55,2021-07-27 10:47:55,0.001s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferenciaAut""))",,,,2021-07-27 10:47:55,2021-07-27 10:47:56,1.157s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:47:56,2021-07-27 10:47:56,0.096s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/setDesautorizacionReferencia,,,,2021-07-27 10:47:56,2021-07-27 10:48:00,3.464s,PASSED
+operation = 21022164,,,,2021-07-27 10:47:57,2021-07-27 10:47:57,0.000s,PASSED
+valor = 0,,,,2021-07-27 10:47:57,2021-07-27 10:47:57,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/setDesautorizacionReferencia""))",,,,2021-07-27 10:47:57,2021-07-27 10:47:57,0.169s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:47:57,2021-07-27 10:48:00,3.032s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut,,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.225s,PASSED
+operation = 21022144,,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.000s,PASSED
+valor = 0,,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferenciaAut""))",,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.179s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.040s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/setAutorizacionReferencia,,,,2021-07-27 10:48:00,2021-07-27 10:48:03,3.283s,PASSED
+operation = 21022155,,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.003s,PASSED
+valor = 0,,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/setAutorizacionReferencia""))",,,,2021-07-27 10:48:00,2021-07-27 10:48:00,0.170s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:48:00,2021-07-27 10:48:03,2.891s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/getConsultaReferencia,,,,2021-07-27 10:48:03,2021-07-27 10:48:05,1.796s,PASSED
+operation = 21022295,,,,2021-07-27 10:48:04,2021-07-27 10:48:04,0.000s,PASSED
+valor = 0,,,,2021-07-27 10:48:04,2021-07-27 10:48:04,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/getConsultaReferencia""))",,,,2021-07-27 10:48:04,2021-07-27 10:48:04,0.166s,PASSED
+fecha = new java.util.Date(),,,,2021-07-27 10:48:04,2021-07-27 10:48:04,0.000s,PASSED
+"hoy = fecha.format(""yyyy-MM-dd"") + ""T00:00:00""",,,,2021-07-27 10:48:04,2021-07-27 10:48:04,0.016s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:48:04,2021-07-27 10:48:05,1.383s,PASSED

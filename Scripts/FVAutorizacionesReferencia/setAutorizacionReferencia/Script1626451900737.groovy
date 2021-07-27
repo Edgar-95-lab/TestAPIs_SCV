@@ -23,7 +23,7 @@ int valor = 0
 
 response = WS.sendRequest(findTestObject('FVAutorizacionesReferencia/setAutorizacionReferencia'))
 
-if (WS.getResponseStatusCode(response) == 200) {
+if (WS.verifyResponseStatusCodeInRange(response, 200, 204) == true) {
     if (WS.getElementPropertyValue(response, 'bResultado') == true) {
 		/**
 		 * Evaluar que la fecha se muestre correctamente
@@ -120,10 +120,8 @@ if (WS.getResponseStatusCode(response) == 200) {
 		}
 		
     }
-} else if (WS.verifyResponseStatusCode(response, 401)) {
-    println('Acceso no autorizado')
 } else {
-    WS.verifyResponseStatusCode(response, 'Nuevo código encontrado')
+    WS.verifyResponseStatusCode(response, 'Error en la petición, verifique el número correspondiente')
 
 }
 

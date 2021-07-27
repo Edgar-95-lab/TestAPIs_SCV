@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_PrimerFase" time="4.244" tests="1" failures="1" errors="0">
+   <testsuite name="TS_PrimerFase" tests="1" failures="1" errors="0" time="4.244" skipped="0" timestamp="2021-07-27 10:46:46" hostname="Edgar García - DESKTOP-GI6RVR8" id="Test Suites/FVAutorizacionesReferencia_SU/TS_ANPR/TS_PrimerFase">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Edgar Garc\u00EDa\\Desktop\\Extras\\TestAPIs_SCV\\Reports\\20210727_104640\\FVAutorizacionesReferencia_SU\\TS_ANPR\\TS_PrimerFase\\20210727_104641"/>
+         <property name="logFiles" value="C:\\Users\\Edgar Garc\u00EDa\\Desktop\\Extras\\TestAPIs_SCV\\Reports\\20210727_104640\\FVAutorizacionesReferencia_SU\\TS_ANPR\\TS_PrimerFase\\20210727_104641\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Edgar García - DESKTOP-GI6RVR8"/>
+         <property name="hostAddress" value="192.168.100.38"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.0.5.208"/>
+      </properties>
+      <testcase name="Test Cases/ANPR/PostConsultaGralXPlaca" time="1.656" classname="Test Cases/ANPR/PostConsultaGralXPlaca" status="FAILED">
+         <failure type="FAILED" message="Test Cases/ANPR/PostConsultaGralXPlaca FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$2.call(Unknown Source)
+	at PostConsultaGralXPlaca.run(PostConsultaGralXPlaca:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627400801830.run(TempTestSuite1627400801830.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-27 10:46:46 - [TEST_CASE][FAILED] - Test Cases/ANPR/PostConsultaGralXPlaca: Test Cases/ANPR/PostConsultaGralXPlaca FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$2.call(Unknown Source)
+	at PostConsultaGralXPlaca.run(PostConsultaGralXPlaca:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627400801830.run(TempTestSuite1627400801830.groovy:39)
+
+
+2021-07-27 10:46:47 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ANPR/PostConsultaGralXPlaca")): Send request successfully
+
+2021-07-27 10:46:48 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\Desktop\Extras\TestAPIs_SCV\Reports\20210727_104640\FVAutorizacionesReferencia_SU\TS_ANPR\TS_PrimerFase\20210727_104641\requests\main\0.har
+
+2021-07-27 10:46:48 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (verifyResponseStatusCodeInRange(response, 200, 204) == true): null
+
+2021-07-27 10:46:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-07-27 10:46:48 - [TEST_STEP][FAILED] - if (getElementPropertyValue(response, "bResultado") == true): null
+
+2021-07-27 10:46:48 - [TEST_STEP][FAILED] - if (toString().equals("")): Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+
+2021-07-27 10:46:48 - [TEST_STEP][FAILED] - verifyElementPropertyValue(response, "vchMensaje", "No se muestra mensaje"): Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+
+2021-07-27 10:46:48 - [MESSAGE][FAILED] - Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "iError", 0): Verify element property value successfully
+
+2021-07-27 10:46:48 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "smModeloVehicular") < 1950): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("") || !(trim().length() >= 11 && trim().length() <= 17)): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("") || trim().length() != 17): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:46:48 - [TEST_STEP][PASSED] - if (toString().equals("")): null]]></system-out>
+         <system-err><![CDATA[2021-07-27 10:46:46 - [TEST_CASE][FAILED] - Test Cases/ANPR/PostConsultaGralXPlaca: Test Cases/ANPR/PostConsultaGralXPlaca FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$2.call(Unknown Source)
+	at PostConsultaGralXPlaca.run(PostConsultaGralXPlaca:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627400801830.run(TempTestSuite1627400801830.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-07-27 10:46:46 - [TEST_SUITE][FAILED] - TS_PrimerFase: Test Cases/ANPR/PostConsultaGralXPlaca FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$2.call(Unknown Source)
+	at PostConsultaGralXPlaca.run(PostConsultaGralXPlaca:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627400801830.run(TempTestSuite1627400801830.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-07-27 10:46:46 - [TEST_SUITE][FAILED] - TS_PrimerFase: Test Cases/ANPR/PostConsultaGralXPlaca FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'No se muestra mensaje' is not equal with actual property value ''
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:189)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$2.call(Unknown Source)
+	at PostConsultaGralXPlaca.run(PostConsultaGralXPlaca:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627400801830.run(TempTestSuite1627400801830.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

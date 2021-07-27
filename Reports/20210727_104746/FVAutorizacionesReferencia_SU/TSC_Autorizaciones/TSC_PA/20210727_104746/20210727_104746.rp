@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportCollectionEntity>
+   <description></description>
+   <name>20210727_104746</name>
+   <tag></tag>
+   <displayName>20210727_104746</displayName>
+   <reportItemDescriptions>
+      <ReportItemDescription>
+         <reportLocation>Reports/20210727_104746/FVAutorizacionesReferencia_SU/TS_Procesos/TS_PrimerFase/20210727_104747</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20210727_104746/FVAutorizacionesReferencia_SU/TS_Procesos/TS_SegundaFase/20210727_104749</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+   </reportItemDescriptions>
+   <testSuiteCollectionId>Test Suites/FVAutorizacionesReferencia_SU/TSC_Autorizaciones/TSC_PA</testSuiteCollectionId>
+</ReportCollectionEntity>

@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_SegundaFase,,,,2021-07-27 10:48:21,2021-07-27 10:48:34,13.338s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia_SU/getConsultaReferencia_SU,,,,2021-07-27 10:48:21,2021-07-27 10:48:33,11.921s,PASSED
+operation = 21021588,,,,2021-07-27 10:48:21,2021-07-27 10:48:21,0.000s,PASSED
+valor = 0,,,,2021-07-27 10:48:21,2021-07-27 10:48:21,0.000s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia_SU/getConsultaReferencia_SU""))",,,,2021-07-27 10:48:21,2021-07-27 10:48:22,0.894s,PASSED
+fecha = new java.util.Date(),,,,2021-07-27 10:48:22,2021-07-27 10:48:22,0.007s,PASSED
+"hoy = fecha.format(""yyyy-MM-dd"") + ""T00:00:00""",,,,2021-07-27 10:48:22,2021-07-27 10:48:22,0.001s,PASSED
+if (getResponseStatusCode(response) == 200),,,,2021-07-27 10:48:22,2021-07-27 10:48:33,10.622s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/postFVCambioFolio,,,,2021-07-27 10:48:33,2021-07-27 10:48:33,0.446s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/postFVCambioFolio""))",,,,2021-07-27 10:48:33,2021-07-27 10:48:33,0.142s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:48:33,2021-07-27 10:48:33,0.031s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/postFVCambioFolioXCancelacion,,,,2021-07-27 10:48:33,2021-07-27 10:48:34,0.402s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/postFVCambioFolioXCancelacion""))",,,,2021-07-27 10:48:34,2021-07-27 10:48:34,0.141s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:48:34,2021-07-27 10:48:34,0.031s,PASSED
+,,,,,,,
+Test Cases/FVAutorizacionesReferencia/postFVActualizacionDts,,,,2021-07-27 10:48:34,2021-07-27 10:48:34,0.354s,PASSED
+"response = sendRequest(findTestObject(""FVAutorizacionesReferencia/postFVActualizacionDts""))",,,,2021-07-27 10:48:34,2021-07-27 10:48:34,0.138s,PASSED
+"if (verifyResponseStatusCodeInRange(response, 200, 204) == true)",,,,2021-07-27 10:48:34,2021-07-27 10:48:34,0.031s,PASSED
