@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_PrimerFase" time="15.89" tests="5" failures="0" errors="0">
+   <testsuite name="TS_PrimerFase" tests="5" failures="0" errors="0" time="15.89" skipped="0" timestamp="2021-07-27 10:06:36" hostname="Edgar García - DESKTOP-GI6RVR8" id="Test Suites/FVAutorizacionesReferencia_SU/TS_Procesos/TS_PrimerFase">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Edgar Garc\u00EDa\\Desktop\\Extras\\TestAPIs_SCV\\Reports\\20210727_100631\\FVAutorizacionesReferencia_SU\\TS_Procesos\\TS_PrimerFase\\20210727_100631"/>
+         <property name="logFiles" value="C:\\Users\\Edgar Garc\u00EDa\\Desktop\\Extras\\TestAPIs_SCV\\Reports\\20210727_100631\\FVAutorizacionesReferencia_SU\\TS_Procesos\\TS_PrimerFase\\20210727_100631\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Edgar García - DESKTOP-GI6RVR8"/>
+         <property name="hostAddress" value="192.168.100.38"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.0.5.208"/>
+      </properties>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" time="1.722" classname="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" status="PASSED">
+         <system-out><![CDATA[2021-07-27 10:06:37 - [TEST_CASE][PASSED] - Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut: Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut
+
+2021-07-27 10:06:37 - [TEST_STEP][PASSED] - operation = 21022144: null
+
+2021-07-27 10:06:37 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-27 10:06:37 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/getConsultaReferenciaAut")): Send request successfully
+
+2021-07-27 10:06:38 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\Desktop\Extras\TestAPIs_SCV\Reports\20210727_100631\FVAutorizacionesReferencia_SU\TS_Procesos\TS_PrimerFase\20210727_100631\requests\main\0.har
+
+2021-07-27 10:06:38 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-27 10:06:38 - [TEST_STEP][PASSED] - if (getResponseStatusCode(response) == 200): null
+
+2021-07-27 10:06:38 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "bResultado") == true): null
+
+2021-07-27 10:06:38 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 10:06:38 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:38 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "iError") <= 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/setDesautorizacionReferencia" time="3.344" classname="Test Cases/FVAutorizacionesReferencia/setDesautorizacionReferencia" status="PASSED">
+         <system-out><![CDATA[2021-07-27 10:06:38 - [TEST_CASE][PASSED] - Test Cases/FVAutorizacionesReferencia/setDesautorizacionReferencia: Test Cases/FVAutorizacionesReferencia/setDesautorizacionReferencia
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - operation = 21022164: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/setDesautorizacionReferencia")): Send request successfully
+
+2021-07-27 10:06:39 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\Desktop\Extras\TestAPIs_SCV\Reports\20210727_100631\FVAutorizacionesReferencia_SU\TS_Procesos\TS_PrimerFase\20210727_100631\requests\main\1.har
+
+2021-07-27 10:06:39 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - if (getResponseStatusCode(response) == 200): null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "bResultado") == true): null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - for ([i = operation, i <= getElementPropertyValue(response, "iNoOperacionModificacion"), (i++)]): null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:39 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:40 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:41 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "iNoOperacionModificacion", valor): Verify element property value successfully
+
+2021-07-27 10:06:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "iError") <= 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" time="0.217" classname="Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut" status="PASSED">
+         <system-out><![CDATA[2021-07-27 10:06:42 - [TEST_CASE][PASSED] - Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut: Test Cases/FVAutorizacionesReferencia/getConsultaReferenciaAut
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - operation = 21022144: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/getConsultaReferenciaAut")): Send request successfully
+
+2021-07-27 10:06:42 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\Desktop\Extras\TestAPIs_SCV\Reports\20210727_100631\FVAutorizacionesReferencia_SU\TS_Procesos\TS_PrimerFase\20210727_100631\requests\main\2.har
+
+2021-07-27 10:06:42 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (getResponseStatusCode(response) == 200): null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "bResultado") == true): null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "iError") <= 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/setAutorizacionReferencia" time="3.02" classname="Test Cases/FVAutorizacionesReferencia/setAutorizacionReferencia" status="PASSED">
+         <system-out><![CDATA[2021-07-27 10:06:42 - [TEST_CASE][PASSED] - Test Cases/FVAutorizacionesReferencia/setAutorizacionReferencia: Test Cases/FVAutorizacionesReferencia/setAutorizacionReferencia
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - operation = 21022155: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/setAutorizacionReferencia")): Send request successfully
+
+2021-07-27 10:06:42 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\Desktop\Extras\TestAPIs_SCV\Reports\20210727_100631\FVAutorizacionesReferencia_SU\TS_Procesos\TS_PrimerFase\20210727_100631\requests\main\3.har
+
+2021-07-27 10:06:42 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (getResponseStatusCode(response) == 200): null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "bResultado") == true): null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - for ([i = operation, i <= getElementPropertyValue(response, "iNoOperacionModificacion"), (i++)]): null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:42 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:43 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:44 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "iNoOperacionModificacion", valor): Verify element property value successfully
+
+2021-07-27 10:06:45 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "iError") <= 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/FVAutorizacionesReferencia/getConsultaReferencia" time="4.114" classname="Test Cases/FVAutorizacionesReferencia/getConsultaReferencia" status="PASSED">
+         <system-out><![CDATA[2021-07-27 10:06:45 - [TEST_CASE][PASSED] - Test Cases/FVAutorizacionesReferencia/getConsultaReferencia: Test Cases/FVAutorizacionesReferencia/getConsultaReferencia
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - operation = 21022095: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = 0: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("FVAutorizacionesReferencia/getConsultaReferencia")): Send request successfully
+
+2021-07-27 10:06:45 - [MESSAGE][INFO] - HAR: C:\Users\Edgar García\Desktop\Extras\TestAPIs_SCV\Reports\20210727_100631\FVAutorizacionesReferencia_SU\TS_Procesos\TS_PrimerFase\20210727_100631\requests\main\4.har
+
+2021-07-27 10:06:45 - [MESSAGE][PASSED] - Send request successfully
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - fecha = new java.util.Date(): null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - hoy = fecha.format("yyyy-MM-dd") + "T00:00:00": null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - if (getResponseStatusCode(response) == 200): null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "[0].bResultado") == true): null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - for ([i = operation, i <= getElementPropertyValue(response, "[0].iNoOperacionModificacion"), (i++)]): null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:45 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:46 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:47 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:48 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - valor = i: null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iNoOperacionModificacion", valor): Verify element property value successfully
+
+2021-07-27 10:06:49 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[0].iError", 0): Verify element property value successfully
+
+2021-07-27 10:06:49 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (toString().length() != 20): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "[0].tiOficina") < 0 || toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "[0].smTipoMovimiento") < 0 || toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (!(toString().length() == 12 || toString().length() == 13)): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (dFechaExpedicion").equals("1900-01-01T00:00:00")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (getElementPropertyValue(response, "[0].iNumeroForma") < 0 || toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (toString().equals("") || toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (toString().equals("")): null
+
+2021-07-27 10:06:49 - [TEST_STEP][PASSED] - if (toString().length() != 18): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-07-27 10:06:36 - [TEST_SUITE][PASSED] - TS_PrimerFase: Test Cases/FVAutorizacionesReferencia/getConsultaReferencia]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
